@@ -1,5 +1,6 @@
 ---
 title: "Variation in S/H ratio in A. cervicornis, Under Nutrient Stress"
+
 author: "Danielle Kroesche"
 date: "February 8, 2021"
 output: html_notebook
