@@ -1,10 +1,13 @@
 ---
 title: "Variation in S/H ratio in A. cervicornis, Under Nutrient Stress"
-
-author: "Danielle Kroesche"
+author: "Danielle Kroesche and Ana Palacio"
 date: "February 8, 2021"
-output: html_notebook
-
+html_document:
+    toc: true
+    df_print: paged
+    theme: united
+editor_options: 
+  chunk_output_type: inline
 ---
 
 This file analyzes the changes in S/H cell ratio in *A. cervicornis* spp.:
@@ -17,29 +20,69 @@ This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute
 
 Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
 
+## load the libraries 
+
+```{r}
+library(steponeR) # StepOne program
+library(ggplot2) # to make plots
+```
+
+## Import the qPCR data and run StepOne program
+
 ```{r}
 
-library(steponeR)
-
 Acer.plates <- list.files(path="Data", pattern=".csv", full.names=T)
-
 Acer.plates
 
 
-Acer.Out <- steponeR(files=Acer.plates, target.ratios=c("A.Acerv", "D.Acerv"), 
-                     fluor.norm=list(A=1, D=1, Acerv=1),
-                     copy.number=list(A=9, D=1, Acerv=1),
-                     ploidy=list(A=1, D=1, Acerv=2),
-                     extract=list(A=0.813, D=0.813, Acerv=0.982))
+Acer.Out <- steponeR(files=Acer.plates, target.ratios=c("A.Acerv"), 
+                     fluor.norm=list(A=0, Acerv=0),
+                     copy.number=list(A=9, Acerv=1),
+                     ploidy=list(A=1, Acerv=2),
+                     extract=list(A=0.813, Acerv=0.982))
+
 # Target ratio results
+
 Acer<-Acer.Out$result
 
 write.csv(Acer, "Acer_ratios.csv")
 
 ```
 
-Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
+## Plots 
 
-When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
+```{r}
+theme_set (theme_classic() + theme(panel.grid.major = element_blank(),
+                              panel.grid.minor = element_blank(), 
+                              axis.line = element_line(colour = "black"),
+                              legend.position="bottom",
+                              axis.text.x = element_text(angle = 90, vjust = 0.5),
+                              plot.title = element_text(size=12, face="bold"),
+                              #panel.border = element_rect(colour = "black", fill=NA, size=1)
+                              panel.border = element_blank()
+                              ))
+```
 
-The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
+```{r}
+acer.CTs <- ggplot(aes(x=Sample.Name, y=Acerv.CT.mean), data = Acer) +
+  geom_point() 
+acer.CTs
+
+A.CTs <- ggplot(aes(x=Sample.Name, y=A.CT.mean), data = Acer) +
+  geom_point() 
+A.CTs
+
+acer.SD <- ggplot(aes(x=Sample.Name, y=Acerv.CT.sd), data = Acer) +
+  geom_point() 
+acer.SD
+
+A.SD <- ggplot(aes(x=Sample.Name, y=A.CT.sd), data = Acer) +
+  geom_point() 
+A.SD
+
+SHcell <- ggplot(aes(x=Sample.Name, y=log(A.Acerv), colour=File.Name), data = Acer) +
+  geom_point() 
+SHcell
+
+```
+
