@@ -20,6 +20,13 @@ This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute
 
 Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
 
+## set working directory 
+```{r}
+setwd("C:/Users/12677/OneDrive - University of Miami/Desktop/Acerv_Nutrients_project1/Data")
+
+```
+
+
 ## load the libraries 
 
 ```{r}
