@@ -24,6 +24,10 @@ SHbox <- ggplot(T1, aes(x=Nutrients, y=A.Acerv)) +
   geom_boxplot()
 SHbox
 
+
+# Outliers removed (Tag#,Treatment,S/H) = (A113,Amb,43.9728968),(A120, Amb, 19.83590988), (A166, Amb, 18.73991716), (A047, Amb, 9.91795494), (A127, NH4,8.418380218), (A106, NH4,7.650439718),(A181, Amb, 7.950483896), (A109, Amb, 7.639841305)
+
+
 #Using tapply to find the average S/H for each Nutrients treatment
 tapply(A.Acerv,Nutrients,mean)
 
@@ -31,7 +35,7 @@ tapply(A.Acerv,Nutrients,mean)
 summary=summarySE(T1,measurevar = 'A.Acerv',groupvars = c('Nutrients'))
 summary
 
-# bar graph 
+# bar graph of Ambient vs NH4 treatments
 SHbar <- ggplot(summary, aes(x=Nutrients, y=A.Acerv))
 SHbar <- SHbar+geom_col(fill='lightgray')
 SHbar=SHbar+geom_errorbar(aes(ymin=A.Acerv-se, ymax=A.Acerv+se),width=.1,size=0.5)
