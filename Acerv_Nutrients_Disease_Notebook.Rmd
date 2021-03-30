@@ -27,9 +27,10 @@ setwd("C:/Users/12677/OneDrive - University of Miami/Desktop/Acerv_Nutrients_pro
 ```
 
 
-## load the libraries 
+## load the libraries and clear environment
 
 ```{r}
+rm(list=ls())
 library(steponeR) # StepOne program
 library(ggplot2) # to make plots
 ```
