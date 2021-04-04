@@ -79,8 +79,21 @@ tapply(b4disease$A.Acerv, b4disease$Nutrients, var)
 bartlett.test(b4disease$A.Acerv ~ b4disease$Nutrients)
 # Bartlett test p-value = 0.1876, variances are not significantly different. So we can use a parametric test
 
+# ANOVA
+b4ANOVA=aov(A.Acerv~Nutrients,b4disease)
+summary(b4ANOVA)
+
+# Shapiro Test for normal distribution
+shapiro.test(resid(b4ANOVA))
+
+# qq-plot
+qqnorm(resid(b4ANOVA))
+qqline(resid(b4ANOVA,lty=2))
+
+
 # general t-test to test if the difference in the means is significant
 t.test(b4disease$A.Acerv ~ b4disease$Nutrients, var.equal=TRUE)
+
 # p-value = 0.7469 is not below 0.05, no significant difference
 
 # specific t-test to see if S/H for Ambient is significantly greater than NH4
@@ -118,4 +131,4 @@ genobar = genobar+geom_errorbar(aes(ymin=A.Acerv-se, ymax=A.Acerv+se), width=.1,
               position=position_dodge(.9))
 genobar
 
-
+# ANOVA
