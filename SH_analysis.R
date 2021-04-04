@@ -20,7 +20,24 @@ b4disease
 afterdisease = subset(NDSH, Sequence=="Disease")
 
 # scatterplot of S/H after nutrients but before disease
+theme_set (theme_classic() + theme(panel.grid.major = element_blank(),
+                                   panel.grid.minor = element_blank(), 
+                                   axis.line = element_line(colour = "black"),
+                                   legend.position="bottom",
+                                   axis.text.x = element_text(angle = 90, vjust = 0.5),
+                                   plot.title = element_text(size=12, face="bold"),
+                                   #panel.border = element_rect(colour = "black", fill=NA, size=1)
+                                   panel.border = element_blank()
+))
 
+SHb4scatter <- ggplot(aes(x=Tag, y=A.Acerv, colour=Nutrients), data = b4disease,) +
+  geom_point() 
+SHb4scatter
+
+# after disease exposure scatter plot of S/H
+SHafterscatter <- ggplot(aes(x=Tag, y=A.Acerv, colour=Nutrients), data = afterdisease) +
+  geom_point() 
+SHafterscatter
 
 # Basic box plot for before and after disease
 SHboxb4 <- ggplot(b4disease, aes(x=Nutrients, y=A.Acerv)) + 
@@ -89,6 +106,16 @@ t.test(b4Ambient,b4NH4,alternative = 'greater',var.equal=TRUE)
 #same thing for after disease exposure. One sided t-test
 t.test(afterAmbient,afterNH4,alternative = 'greater',var.equal=TRUE)
 
-#ANOVA
+# summary of data before disease exposure by genotype
+summaryb4geno=summarySE(b4disease,measurevar = 'A.Acerv',groupvars = c('Genotype','Nutrients'))
+summaryb4geno
+
+#grouped bar plot by genotype
+genobar = ggplot(summaryb4geno, aes(fill=Nutrients, y=A.Acerv, x=Genotype)) + 
+  geom_bar(position='dodge', stat='identity')
+
+genobar = genobar+geom_errorbar(aes(ymin=A.Acerv-se, ymax=A.Acerv+se), width=.1, size= 0.5, 
+              position=position_dodge(.9))
+genobar
 
 
