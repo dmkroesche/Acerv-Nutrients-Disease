@@ -7,6 +7,8 @@ library(readr)
 library(ggplot2)
 library(Rmisc)
 
+# Hypothesis #1: Corals in NH4 treatment will have elevated S/H
+
 #clear environment
 rm(list=ls())
 
@@ -90,6 +92,7 @@ shapiro.test(resid(b4ANOVA))
 qqnorm(resid(b4ANOVA))
 qqline(resid(b4ANOVA,lty=2))
 
+### Distribution is not normal. Log transform or use Kruskal-Wallace test?
 
 # general t-test to test if the difference in the means is significant
 t.test(b4disease$A.Acerv ~ b4disease$Nutrients, var.equal=TRUE)
@@ -98,18 +101,18 @@ t.test(b4disease$A.Acerv ~ b4disease$Nutrients, var.equal=TRUE)
 
 # specific t-test to see if S/H for Ambient is significantly greater than NH4
 # create vectors for each treatment
-b4Ambient=A.Acerv[b4disease$Nutrients=='Ambient']
+b4Ambient=b4disease$A.Acerv[b4disease$Nutrients=='Ambient']
 b4Ambient
 
-b4NH4=A.Acerv[b4disease$Nutrients=='NH4']
+b4NH4=b4disease$A.Acerv[b4disease$Nutrients=='NH4']
 b4NH4
 
 # specific t-test to see if S/H for Ambient is significantly greater than NH4 after diease exposure
 # create vectors for each treatment
-afterAmbient=A.Acerv[afterdisease$Nutrients=='Ambient']
+afterAmbient=afterdisease$A.Acerv[afterdisease$Nutrients=='Ambient']
 afterAmbient
 
-afterNH4=A.Acerv[afterdisease$Nutrients=='NH4']
+afterNH4=afterdisease$A.Acerv[afterdisease$Nutrients=='NH4']
 afterNH4
 
 #now we can do a one-sided t-test for before disease exposure
@@ -131,4 +134,25 @@ genobar = genobar+geom_errorbar(aes(ymin=A.Acerv-se, ymax=A.Acerv+se), width=.1,
               position=position_dodge(.9))
 genobar
 
-# ANOVA
+genoANOVA=aov(A.Acerv~Genotype:Nutrients,b4disease)
+summary(genoANOVA)
+
+TukeyHSD(genoANOVA)
+
+#######################################################
+
+
+
+# Hypothesis #2: Higher algal densities = higher disease mortality
+
+# S/H vs Mortality scatter plot
+mortalityscatter <- ggplot(aes(x=Tag, y=A.Acerv, colour=Mortality), data = b4disease,) +
+  geom_point() 
+mortalityscatter
+
+# parse them out by survivorship and use S/H and genotype as co-variates 
+
+
+
+
+

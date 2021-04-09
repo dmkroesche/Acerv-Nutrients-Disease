@@ -9,35 +9,35 @@ Initial sample ID,Tag,SampleID,Date,Time,Genotype,Nutrients ,Diseased,Combo,Tank
 25,208,N25_208,10/30/2020,,FM9,Ambient,Pathogen,Ambient_Pathogen,1,1,,Razor,,2,,,OnlyNutrients,,1,8,H1,2/4/2021,Plate1_RNA,H1,N25_208,2/25/2021,11:39:00 AM,0.12972628,Died,11/6/2020,TL
 26,243,N26_243,10/30/2020,,FM6,Ambient,Pathogen,Ambient_Pathogen,1,1,,Razor,,2,,,OnlyNutrients,,1,9,A2,2/4/2021,Plate1_RNA,A2,N26_243,2/25/2021,11:27:00 AM,0.22260265,Died,11/8/2020,TL
 27,283,N27_283,10/30/2020,,FM14,Ambient,Pathogen,Ambient_Pathogen,1,1,,Razor,,2,,,OnlyNutrients,,1,10,B2,2/4/2021,Plate1_RNA,B2,N27_283,2/25/2021,11:27:00 AM,0.212574827,Died,11/6/2020,TL
-28,A027,N28_A027,10/30/2020,,Cooper-9,NH4,Pathogen,NH4_Pathogen,4,4,,Razor,,2,Y,,OnlyNutrients,,1,11,C2,2/4/2021,Plate1_RNA,C2,N28_A027,2/25/2021,11:27:00 AM,0.203844745,Died,11/4/2020,TL
-29,A041,N29_A041,10/30/2020,,Acerv2,NH4,Pathogen,NH4_Pathogen,8,4,,Razor,,2,,,OnlyNutrients,,1,12,D2,2/4/2021,Plate1_RNA,D2,N29_A041,2/25/2021,11:27:00 AM,0.232377561,Died,11/3/2020,TL
-30,A089,N30_A089,10/30/2020,,Elkhorn,NH4,Pathogen,NH4_Pathogen,4,4,,Razor,,2,,,OnlyNutrients,,1,13,E2,2/4/2021,Plate1_RNA,E2,N30_A089,2/25/2021,11:27:00 AM,0.117159242,Died,11/6/2020,TL
-31,A097,N31_A097,10/30/2020,,Kelsey-1,NH4,Pathogen,NH4_Pathogen,8,4,,Razor,,2,,,OnlyNutrients,,1,14,F2,2/4/2021,Plate1_RNA,F2,N31_A097,2/25/2021,11:27:00 AM,0.115266299,Died,10/31/2020,Died from nutrients
-32,A102,N32_A102,10/30/2020,,U44,NH4,Pathogen,NH4_Pathogen,4,4,,Razor,,2,,,OnlyNutrients,,1,15,G2,2/4/2021,Plate1_RNA,G2,N32_A102,2/25/2021,11:27:00 AM,0.135094671,Died,11/7/2020,TL in center
-33,A163,N33_A163,10/30/2020,,K2,NH4,Pathogen,NH4_Pathogen,4,4,,Razor,,2,,,OnlyNutrients,,1,16,H2,2/4/2021,Plate1_RNA,H2,N33_A163,2/25/2021,11:27:00 AM,0.188357146,Died,11/5/2020,"TL, disease"
-34,A183,N34_A183,10/30/2020,,FM19,NH4,Pathogen,NH4_Pathogen,8,4,,Razor,,2,,,OnlyNutrients,,1,17,A3,2/4/2021,Plate1_RNA,A3,N34_A183,2/25/2021,11:28:00 AM,0.185249643,Died,11/5/2020,thin tissue
-35,222,N35_222,10/30/2020,,FM9,NH4,Pathogen,NH4_Pathogen,8,4,,Razor,,2,,,OnlyNutrients,,1,18,B3,2/4/2021,Plate1_RNA,B3,N35_222,2/25/2021,11:28:00 AM,0.138028938,Lived,,Lived to the end of experiment
-36,238,N36_238,10/30/2020,,FM6,NH4,Pathogen,NH4_Pathogen,8,4,,Razor,,2,,,OnlyNutrients,,1,19,C3,2/4/2021,Plate1_RNA,C3,N36_238,2/25/2021,11:28:00 AM,0.170523523,Died,11/8/2020,TL
-37,285,N37_285,10/30/2020,,FM14,NH4,Pathogen,NH4_Pathogen,4,4,,Razor,,2,,,OnlyNutrients,,1,20,D3,2/4/2021,Plate1_RNA,D3,N37_285,2/25/2021,11:28:00 AM,0.173383999,Lived,,Lived to the end of experiment
-38,A015,N38_A015,10/30/2020,,Kelsey-1,Ambient,Placebo,Ambient_Placebo,5,5,,Razor,,2,,,OnlyNutrients,,1,21,E3,2/4/2021,Plate1_RNA,E3,N38_A015,2/25/2021,11:28:00 AM,0.111842675,Died,11/7/2020,TL
-39,A033,N39_A033,10/30/2020,,Cooper-9,Ambient,Placebo,Ambient_Placebo,1,5,,Razor,,2,,,OnlyNutrients,,1,22,F3,2/4/2021,Plate1_RNA,F3,N39_A033,2/25/2021,11:28:00 AM,0.145293561,Lived,,Sampled as a pair 11/6/2020
-40,A055,N40_A055,10/30/2020,,Acerv2,Ambient,Placebo,Ambient_Placebo,1,5,,Razor,,2,,,OnlyNutrients,,1,23,G3,2/4/2021,Plate1_RNA,G3,N40_A055,2/25/2021,11:28:00 AM,0.138940844,Lived,,Sampled as a pair 11/3/2020
-41,A109,N41_A109,10/30/2020,,U44,Ambient,Placebo,Ambient_Placebo,5,5,,Razor,,2,,,OnlyNutrients,,1,24,H3,2/4/2021,Plate1_RNA,H3,N41_A109,2/25/2021,11:28:00 AM,0.145545554,Lived,,Sampled by accident 11/6/2020
-42,A154,N42_A154,10/30/2020,,K2,Ambient,Placebo,Ambient_Placebo,5,5,,Razor,,2,,,OnlyNutrients,,1,25,A4,2/4/2021,Plate1_RNA,A4,N42_A154,2/25/2021,11:29:00 AM,0.162503497,Lived,,Sampled as a pair 11/6/2020
-43,A189,N43_A189,10/30/2020,,FM19,Ambient,Placebo,Ambient_Placebo,5,5,,Razor,,2,,,OnlyNutrients,,1,26,B4,2/4/2021,Plate1_RNA,B4,N43_A189,2/25/2021,11:29:00 AM,0.256324391,Lived,,Lived to the end of experiment
-44,227,N44_227,10/30/2020,,FM9,Ambient,Placebo,Ambient_Placebo,5,5,,Razor,,2,,,OnlyNutrients,,1,27,C4,2/4/2021,Plate1_RNA,C4,N44_227,2/25/2021,11:29:00 AM,0.159711784,Lived,,Sampled as a pair 11/6/2020
-45,245,N45_245,10/30/2020,,FM6,Ambient,Placebo,Ambient_Placebo,1,5,,Razor,,2,,,OnlyNutrients,,1,28,D4,2/4/2021,Plate1_RNA,D4,N45_245,2/25/2021,11:29:00 AM,0.206332455,Lived,,Sampled at a pair 11/7/2020
-46,279,N46_279,10/30/2020,,FM14,Ambient,Placebo,Ambient_Placebo,1,5,,Razor,,2,,,OnlyNutrients,,1,29,E4,2/4/2021,Plate1_RNA,E4,N46_279,2/25/2021,11:29:00 AM,0.161213299,Lived,,Sampled by accident 11/6/2020
-47,471,N47_471,10/30/2020,,Elkhorn,Ambient,Placebo,Ambient_Placebo,1,5,,Razor,,2,,,OnlyNutrients,,1,30,F4,2/4/2021,Plate1_RNA,F4,N47_471,2/25/2021,11:29:00 AM,0.147219703,Lived,,Lived to the end of experiment
-48,A013,N48_A013,10/30/2020,,Kelsey-1,Ambient,Placebo,Ambient_Placebo,2,6,,Razor,,2,,,OnlyNutrients,,1,31,G4,2/4/2021,Plate1_RNA,G4,N48_A013,2/25/2021,11:29:00 AM,0.111920225,Lived,,Lived to the end of experiment
-49,A020,N49_A020,10/30/2020,,Cooper-9,Ambient,Placebo,Ambient_Placebo,2,6,,Razor,,2,,,OnlyNutrients,,1,32,H4,2/4/2021,Plate1_RNA,H4,N49_A020,2/25/2021,11:29:00 AM,0.258913603,Lived,,Lived to the end of experiment
-50,A043,N50_A043,10/30/2020,,Acerv2,Ambient,Placebo,Ambient_Placebo,2,6,,Razor,,2,,,OnlyNutrients,,1,33,A5,2/4/2021,Plate1_RNA,A5,N50_A043,2/25/2021,11:30:00 AM,0.199234952,Lived,,Lived to the end of experiment
-51,A079,N51_A079,10/30/2020,,Elkhorn,Ambient,Placebo,Ambient_Placebo,2,6,,Razor,,2,,,OnlyNutrients,,1,34,B5,2/4/2021,Plate1_RNA,B5,N51_A079,2/25/2021,11:30:00 AM,0.250875357,Lived,,Lived to the end of experiment
-53,A173,N53_A173,10/30/2020,,K2,Ambient,Placebo,Ambient_Placebo,6,6,,Razor,,2,,,OnlyNutrients,,1,36,D5,2/4/2021,Plate1_RNA,D5,N53_A173,2/25/2021,11:30:00 AM,0.251746333,Lived,,Lived to the end of experiment
-54,A178,N54_A178,10/30/2020,,FM19,Ambient,Placebo,Ambient_Placebo,6,6,,Razor,,2,,,OnlyNutrients,,1,37,E5,2/4/2021,Plate1_RNA,E5,N54_A178,2/25/2021,11:30:00 AM,0.20776761,Lived,,Lived to the end of experiment
-55,207,N55_207,10/30/2020,,FM9,Ambient,Placebo,Ambient_Placebo,2,6,,Razor,,2,,,OnlyNutrients,,1,38,F5,2/4/2021,Plate1_RNA,F5,N55_207,2/25/2021,11:30:00 AM,0.125003697,Lived,,Lived to the end of experiment
-56,244,N56_244,10/30/2020,,FM6,Ambient,Placebo,Ambient_Placebo,6,6,,Razor,,2,,,OnlyNutrients,,1,39,G5,2/4/2021,Plate1_RNA,G5,N56_244,2/25/2021,11:30:00 AM,0.155883774,Lived,,Lived to the end of experiment
-57,263,N57_263,10/30/2020,,FM14,Ambient,Placebo,Ambient_Placebo,2,6,,Razor,,2,,,OnlyNutrients,,1,40,H5,2/4/2021,Plate1_RNA,H5,N57_263,2/25/2021,11:30:00 AM,0.158169427,Lived,,Lived to the end of experiment
+28,A027,N28_A027,10/30/2020,,Cooper-9,Ambient,Pathogen,NH4_Pathogen,4,4,,Razor,,2,Y,,OnlyNutrients,,1,11,C2,2/4/2021,Plate1_RNA,C2,N28_A027,2/25/2021,11:27:00 AM,0.203844745,Died,11/4/2020,TL
+29,A041,N29_A041,10/30/2020,,Acerv2,Ambient,Pathogen,NH4_Pathogen,8,4,,Razor,,2,,,OnlyNutrients,,1,12,D2,2/4/2021,Plate1_RNA,D2,N29_A041,2/25/2021,11:27:00 AM,0.232377561,Died,11/3/2020,TL
+30,A089,N30_A089,10/30/2020,,Elkhorn,Ambient,Pathogen,NH4_Pathogen,4,4,,Razor,,2,,,OnlyNutrients,,1,13,E2,2/4/2021,Plate1_RNA,E2,N30_A089,2/25/2021,11:27:00 AM,0.117159242,Died,11/6/2020,TL
+31,A097,N31_A097,10/30/2020,,Kelsey-1,Ambient,Pathogen,NH4_Pathogen,8,4,,Razor,,2,,,OnlyNutrients,,1,14,F2,2/4/2021,Plate1_RNA,F2,N31_A097,2/25/2021,11:27:00 AM,0.115266299,Died,10/31/2020,Died from nutrients
+32,A102,N32_A102,10/30/2020,,U44,Ambient,Pathogen,NH4_Pathogen,4,4,,Razor,,2,,,OnlyNutrients,,1,15,G2,2/4/2021,Plate1_RNA,G2,N32_A102,2/25/2021,11:27:00 AM,0.135094671,Died,11/7/2020,TL in center
+33,A163,N33_A163,10/30/2020,,K2,Ambient,Pathogen,NH4_Pathogen,4,4,,Razor,,2,,,OnlyNutrients,,1,16,H2,2/4/2021,Plate1_RNA,H2,N33_A163,2/25/2021,11:27:00 AM,0.188357146,Died,11/5/2020,"TL, disease"
+34,A183,N34_A183,10/30/2020,,FM19,Ambient,Pathogen,NH4_Pathogen,8,4,,Razor,,2,,,OnlyNutrients,,1,17,A3,2/4/2021,Plate1_RNA,A3,N34_A183,2/25/2021,11:28:00 AM,0.185249643,Died,11/5/2020,thin tissue
+35,222,N35_222,10/30/2020,,FM9,Ambient,Pathogen,NH4_Pathogen,8,4,,Razor,,2,,,OnlyNutrients,,1,18,B3,2/4/2021,Plate1_RNA,B3,N35_222,2/25/2021,11:28:00 AM,0.138028938,Lived,,Lived to the end of experiment
+36,238,N36_238,10/30/2020,,FM6,Ambient,Pathogen,NH4_Pathogen,8,4,,Razor,,2,,,OnlyNutrients,,1,19,C3,2/4/2021,Plate1_RNA,C3,N36_238,2/25/2021,11:28:00 AM,0.170523523,Died,11/8/2020,TL
+37,285,N37_285,10/30/2020,,FM14,Ambient,Pathogen,NH4_Pathogen,4,4,,Razor,,2,,,OnlyNutrients,,1,20,D3,2/4/2021,Plate1_RNA,D3,N37_285,2/25/2021,11:28:00 AM,0.173383999,Lived,,Lived to the end of experiment
+38,A015,N38_A015,10/30/2020,,Kelsey-1,NH4,Placebo,Ambient_Placebo,5,5,,Razor,,2,,,OnlyNutrients,,1,21,E3,2/4/2021,Plate1_RNA,E3,N38_A015,2/25/2021,11:28:00 AM,0.111842675,Died,11/7/2020,TL
+39,A033,N39_A033,10/30/2020,,Cooper-9,NH4,Placebo,Ambient_Placebo,1,5,,Razor,,2,,,OnlyNutrients,,1,22,F3,2/4/2021,Plate1_RNA,F3,N39_A033,2/25/2021,11:28:00 AM,0.145293561,Lived,,Sampled as a pair 11/6/2020
+40,A055,N40_A055,10/30/2020,,Acerv2,NH4,Placebo,Ambient_Placebo,1,5,,Razor,,2,,,OnlyNutrients,,1,23,G3,2/4/2021,Plate1_RNA,G3,N40_A055,2/25/2021,11:28:00 AM,0.138940844,Lived,,Sampled as a pair 11/3/2020
+41,A109,N41_A109,10/30/2020,,U44,NH4,Placebo,Ambient_Placebo,5,5,,Razor,,2,,,OnlyNutrients,,1,24,H3,2/4/2021,Plate1_RNA,H3,N41_A109,2/25/2021,11:28:00 AM,0.145545554,Lived,,Sampled by accident 11/6/2020
+42,A154,N42_A154,10/30/2020,,K2,NH4,Placebo,Ambient_Placebo,5,5,,Razor,,2,,,OnlyNutrients,,1,25,A4,2/4/2021,Plate1_RNA,A4,N42_A154,2/25/2021,11:29:00 AM,0.162503497,Lived,,Sampled as a pair 11/6/2020
+43,A189,N43_A189,10/30/2020,,FM19,NH4,Placebo,Ambient_Placebo,5,5,,Razor,,2,,,OnlyNutrients,,1,26,B4,2/4/2021,Plate1_RNA,B4,N43_A189,2/25/2021,11:29:00 AM,0.256324391,Lived,,Lived to the end of experiment
+44,227,N44_227,10/30/2020,,FM9,NH4,Placebo,Ambient_Placebo,5,5,,Razor,,2,,,OnlyNutrients,,1,27,C4,2/4/2021,Plate1_RNA,C4,N44_227,2/25/2021,11:29:00 AM,0.159711784,Lived,,Sampled as a pair 11/6/2020
+45,245,N45_245,10/30/2020,,FM6,NH4,Placebo,Ambient_Placebo,1,5,,Razor,,2,,,OnlyNutrients,,1,28,D4,2/4/2021,Plate1_RNA,D4,N45_245,2/25/2021,11:29:00 AM,0.206332455,Lived,,Sampled at a pair 11/7/2020
+46,279,N46_279,10/30/2020,,FM14,NH4,Placebo,Ambient_Placebo,1,5,,Razor,,2,,,OnlyNutrients,,1,29,E4,2/4/2021,Plate1_RNA,E4,N46_279,2/25/2021,11:29:00 AM,0.161213299,Lived,,Sampled by accident 11/6/2020
+47,471,N47_471,10/30/2020,,Elkhorn,NH4,Placebo,Ambient_Placebo,1,5,,Razor,,2,,,OnlyNutrients,,1,30,F4,2/4/2021,Plate1_RNA,F4,N47_471,2/25/2021,11:29:00 AM,0.147219703,Lived,,Lived to the end of experiment
+48,A013,N48_A013,10/30/2020,,Kelsey-1,NH4,Placebo,Ambient_Placebo,2,6,,Razor,,2,,,OnlyNutrients,,1,31,G4,2/4/2021,Plate1_RNA,G4,N48_A013,2/25/2021,11:29:00 AM,0.111920225,Lived,,Lived to the end of experiment
+49,A020,N49_A020,10/30/2020,,Cooper-9,NH4,Placebo,Ambient_Placebo,2,6,,Razor,,2,,,OnlyNutrients,,1,32,H4,2/4/2021,Plate1_RNA,H4,N49_A020,2/25/2021,11:29:00 AM,0.258913603,Lived,,Lived to the end of experiment
+50,A043,N50_A043,10/30/2020,,Acerv2,NH4,Placebo,Ambient_Placebo,2,6,,Razor,,2,,,OnlyNutrients,,1,33,A5,2/4/2021,Plate1_RNA,A5,N50_A043,2/25/2021,11:30:00 AM,0.199234952,Lived,,Lived to the end of experiment
+51,A079,N51_A079,10/30/2020,,Elkhorn,NH4,Placebo,Ambient_Placebo,2,6,,Razor,,2,,,OnlyNutrients,,1,34,B5,2/4/2021,Plate1_RNA,B5,N51_A079,2/25/2021,11:30:00 AM,0.250875357,Lived,,Lived to the end of experiment
+53,A173,N53_A173,10/30/2020,,K2,NH4,Placebo,Ambient_Placebo,6,6,,Razor,,2,,,OnlyNutrients,,1,36,D5,2/4/2021,Plate1_RNA,D5,N53_A173,2/25/2021,11:30:00 AM,0.251746333,Lived,,Lived to the end of experiment
+54,A178,N54_A178,10/30/2020,,FM19,NH4,Placebo,Ambient_Placebo,6,6,,Razor,,2,,,OnlyNutrients,,1,37,E5,2/4/2021,Plate1_RNA,E5,N54_A178,2/25/2021,11:30:00 AM,0.20776761,Lived,,Lived to the end of experiment
+55,207,N55_207,10/30/2020,,FM9,NH4,Placebo,Ambient_Placebo,2,6,,Razor,,2,,,OnlyNutrients,,1,38,F5,2/4/2021,Plate1_RNA,F5,N55_207,2/25/2021,11:30:00 AM,0.125003697,Lived,,Lived to the end of experiment
+56,244,N56_244,10/30/2020,,FM6,NH4,Placebo,Ambient_Placebo,6,6,,Razor,,2,,,OnlyNutrients,,1,39,G5,2/4/2021,Plate1_RNA,G5,N56_244,2/25/2021,11:30:00 AM,0.155883774,Lived,,Lived to the end of experiment
+57,263,N57_263,10/30/2020,,FM14,NH4,Placebo,Ambient_Placebo,2,6,,Razor,,2,,,OnlyNutrients,,1,40,H5,2/4/2021,Plate1_RNA,H5,N57_263,2/25/2021,11:30:00 AM,0.158169427,Lived,,Lived to the end of experiment
 58,A014,N58_A014,10/30/2020,,Kelsey-1,NH4,Placebo,NH4_Placebo,3,7,,Razor,,2,,,OnlyNutrients,,1,41,A6,2/4/2021,Plate1_RNA,A6,N58_A014,2/25/2021,11:32:00 AM,0.120661947,Lived,,Sampled as a pair 11/6/2020
 65,220,N65_220,10/30/2020,,FM9,NH4,Placebo,NH4_Placebo,7,7,,Razor,,2,,,OnlyNutrients,,1,48,H6,2/4/2021,Plate1_RNA,B6,N65_220,2/25/2021,11:32:00 AM,0.165975554,Lived,,Lived to the end of experiment
 60,A056,N60_A056,10/30/2020,,Acerv2,NH4,Placebo,NH4_Placebo,3,7,,Razor,,2,,,OnlyNutrients,,1,43,C6,2/4/2021,Plate1_RNA,C6,N60_A056,2/25/2021,11:32:00 AM,0.167768372,Died,11/2/2020,TL
