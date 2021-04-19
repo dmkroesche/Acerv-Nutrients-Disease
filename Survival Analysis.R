@@ -59,7 +59,7 @@ surv_pvalue(fit=survMod)
 ggsurvplot(fit = survfit(Surv(survivalTime, category)~Diseased, data=NDSH))
 
 datSH <- NDSH %>%
-  filter(Diseased=='Pathogen')
+  filter(Diseased=='Pathogen', Timepoint=="T1")
 
 
 shMod <- coxph(Surv(survivalTime, category)~SH, data=datSH)
@@ -103,3 +103,4 @@ proMod <- coxph(Surv(survivalTime, category)~Disease+Treatment, data=datPro)
 summary(proMod)
 
 ggsurvplot(fit = survfit(Surv(survivalTime, category)~Disease+Treatment, data=datPro))
+
