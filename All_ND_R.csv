@@ -1,0 +1,186 @@
+Tag,Genotype,Notes,Nutrients,Disease,Tank,Mortality,Date of Mortality,Date Sampled as a pair,Mortality Notes,Date Nutrients Start,Date Disease,Experiment End,Days Survived
+A012,Kelsey-1,,Ambient,Placebo,5,Lived,,11/5/2020,Sampled as a pair 11/5/2020,9/15/2020,10/31/2020,11/11/2020,11
+A033,Cooper-9,,Ambient,Placebo,5,Lived,,11/6/2020,Sampled as a pair 11/6/2020,9/15/2020,10/31/2020,11/11/2020,11
+A055,Acerv2,,Ambient,Placebo,5,Lived,,11/3/2020,Sampled as a pair 11/3/2020,9/15/2020,10/31/2020,11/11/2020,11
+A069,Elkhorn,,Ambient,Placebo,5,Lived,,11/8/2020,Sampled as a pair 11/8/2020,9/15/2020,10/31/2020,11/11/2020,11
+A091,U44,,Ambient,Placebo,5,Lived,,11/4/2020,Sampled as a pair 11/4/2020,9/15/2020,10/31/2020,11/11/2020,11
+A109,U44,,Ambient,Placebo,5,Lived,,11/6/2020,Sampled by accident 11/6/2020,9/15/2020,10/31/2020,11/11/2020,11
+A154,K2,,Ambient,Placebo,5,Lived,,11/6/2020,Sampled as a pair 11/6/2020,9/15/2020,10/31/2020,11/11/2020,11
+A186,FM19,,Ambient,Placebo,5,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+A191,FM19,,Ambient,Placebo,5,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+250,FM6,,Ambient,Placebo,5,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+268,FM14,,Ambient,Placebo,5,Lived,,11/6/2020,Sampled as a pair 11/6/2020,9/15/2020,10/31/2020,11/11/2020,11
+279,FM14,,Ambient,Placebo,5,Lived,,11/6/2020,Sampled by accident 11/6/2020,9/15/2020,10/31/2020,11/11/2020,11
+471,Elkhorn,,Ambient,Pathogen,5,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+A015,Kelsey-1,,Ambient,Placebo,6,Died,11/7/2020,,TL,9/15/2020,10/31/2020,11/11/2020,7
+A028,Cooper-9,,Ambient,Placebo,6,Lived,,11/5/2020,Sampled as a pair 11/5/2020,9/15/2020,10/31/2020,11/11/2020,11
+A047,Acerv2,,Ambient,Placebo,6,Lived,,11/6/2020,Sampled as a pair 11/6/2020,9/15/2020,10/31/2020,11/11/2020,11
+A062,Acerv2,,Ambient,Placebo,6,Lived,,11/9/2020,Sampled as a pair 11/9/2020,9/15/2020,10/31/2020,11/11/2020,11
+A086,Elkhorn,,Ambient,Placebo,6,Lived,,11/6/2020,Sampled as a pair 11/6/2020,9/15/2020,10/31/2020,11/11/2020,11
+A103,Kelsey-1,,Ambient,Placebo,6,Lived,,11/6/2020,Sampled as a pair 11/6/2020,9/15/2020,10/31/2020,11/11/2020,11
+A120,U44,,Ambient,Placebo,6,Lived,,11/7/2020,Sampled as a pair 11/7/2020,9/15/2020,10/31/2020,11/11/2020,11
+A160,K2,,Ambient,Placebo,6,Lived,,11/5/2020,Sampled as a pair 11/5/2020,9/15/2020,10/31/2020,11/11/2020,11
+A189,FM19,,Ambient,Placebo,6,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+218,FM9,,Ambient,Placebo,6,Lived,,11/6/2020,Sampled as a pair 11/6/2020,9/15/2020,10/31/2020,11/11/2020,11
+245,FM6,,Ambient,Placebo,6,Lived,,11/7/2020,Sampled at a pair 11/7/2020,9/15/2020,10/31/2020,11/11/2020,11
+252,FM6,,Ambient,Placebo,6,Lived,,11/9/2020,Sampled as a pair 11/9/2020,9/15/2020,10/31/2020,11/11/2020,11
+276,FM14,,Ambient,Placebo,6,Lived,,11/5/2020,Sampled as a pair 11/5/2020,9/15/2020,10/31/2020,11/11/2020,11
+334,FM9,,Ambient,Placebo,6,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+A014,Kelsey-1,,NH4,Placebo,7,Lived,,11/6/2020,Sampled as a pair 11/6/2020,9/15/2020,10/31/2020,11/11/2020,11
+A036,Cooper-9,,NH4,Placebo,7,Lived,,11/4/2020,Sampled as a pair 11/4/2020,9/15/2020,10/31/2020,11/11/2020,11
+A051,Acerv2,,NH4,Placebo,7,Lived,,11/5/2020,Sampled as a pair 11/5/2020,9/15/2020,10/31/2020,11/11/2020,11
+A077,Elkhorn,,NH4,Placebo,7,Lived,,11/7/2020,Sampled as a pair 11/7/2020,9/15/2020,10/31/2020,11/11/2020,11
+A092,Elkhorn,,NH4,Placebo,7,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+A105,U44,,NH4,Placebo,7,Lived,,11/6/2020,Sampled as a pair 11/6/2020,9/15/2020,10/31/2020,11/11/2020,11
+A106,U44,,NH4,Placebo,7,Lived,,11/6/2020,Sampled as a pair 11/6/2020,9/15/2020,10/31/2020,11/11/2020,11
+A127,U44,,NH4,Placebo,7,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+A159,K2,,NH4,Placebo,7,Died,11/7/2020,,TL,9/15/2020,10/31/2020,11/11/2020,7
+A162,K2,,NH4,Placebo,7,Lived,,11/5/2020,Sampled as a pair 11/5/2020,9/15/2020,10/31/2020,11/11/2020,11
+A190,FM19,,NH4,Placebo,7,Lived,,11/5/2020,Sampled as a pair 11/5/2020,9/15/2020,10/31/2020,11/11/2020,11
+A192,FM19,,NH4,Placebo,7,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+A196,FM19,,NH4,Placebo,7,Lived,,11/7/2020,Sampled as a pair 11/7/2020,9/15/2020,10/31/2020,11/11/2020,11
+215,FM9,,NH4,Placebo,7,Lived,,11/4/2020,Sampled as a pair 11/4/2020,9/15/2020,10/31/2020,11/11/2020,11
+220,FM9,,NH4,Placebo,7,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+226,FM9,,NH4,Placebo,7,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+231,FM6,,NH4,Placebo,7,Lived,,11/4/2020,Sampled as a pair 11/4/2020,9/15/2020,10/31/2020,11/11/2020,11
+254,FM6,,NH4,Placebo,7,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+258,FM6,,NH4,Placebo,7,Lived,,11/5/2020,Sampled as a pair 11/5/2020,9/15/2020,10/31/2020,11/11/2020,11
+262,FM14,,NH4,Placebo,7,Lived,,11/6/2020,Sampled as a pair 11/6/2020,9/15/2020,10/31/2020,11/11/2020,11
+269,FM14,,NH4,Placebo,7,Lived,,11/6/2020,Sampled as a pair 11/6/2020,9/15/2020,10/31/2020,11/11/2020,11
+293,FM14,,NH4,Placebo,7,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+A052,Acerv2,,NH4,Placebo,8,Lived,,11/3/2020,Sampled as a pair 11/3/2020,9/15/2020,10/31/2020,11/11/2020,11
+A068,Elkhorn,,NH4,Placebo,8,Died,11/10/2020,,"Physical damage, fell over",9/15/2020,10/31/2020,11/11/2020,10
+A071,U44,,NH4,Placebo,8,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+A072,Elkhorn,,NH4,Placebo,8,Lived,,11/6/2020,Sampled as a pair 11/6/2020,9/15/2020,10/31/2020,11/11/2020,11
+A083,Elkhorn,,NH4,Placebo,8,Lived,,11/7/2020,Sampled as a pair 11/7/2020,9/15/2020,10/31/2020,11/11/2020,11
+A131,U44,,NH4,Placebo,8,Lived,,11/6/2020,Sampled as a pair 11/6/2020,9/15/2020,10/31/2020,11/11/2020,11
+A134,U44,,NH4,Placebo,8,Lived,,11/7/2020,Sampled as a pair 11/7/2020,9/15/2020,10/31/2020,11/11/2020,11
+A155,K2,,NH4,Placebo,8,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+A165,K2,,NH4,Placebo,8,Lived,,11/6/2020,Sampled as a pair 11/6/2020,9/15/2020,10/31/2020,11/11/2020,11
+A172,K2,,NH4,Placebo,8,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+A185,FM19,,NH4,Placebo,8,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+A188,FM19,,NH4,Placebo,8,Lived,,11/5/2020,Sampled as a pair 11/5/2020,9/15/2020,10/31/2020,11/11/2020,11
+A198,FM19,,NH4,Placebo,8,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+204,FM9,,NH4,Placebo,8,Lived,,11/6/2020,Sampled as a pair 11/6/2020,9/15/2020,10/31/2020,11/11/2020,11
+211,FM9,,NH4,Placebo,8,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+214,FM9,,NH4,Placebo,8,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+239,FM6,,NH4,Placebo,8,Lived,,11/6/2020,Sampled as a pair 11/6/2020,9/15/2020,10/31/2020,11/11/2020,11
+261,FM6,,NH4,Placebo,8,Lived,,11/9/2020,Sampled as a pair 11/9/2020,9/15/2020,10/31/2020,11/11/2020,11
+266,FM6,,NH4,Placebo,8,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+272,FM14,,NH4,Placebo,8,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+282,FM14,,NH4,Placebo,8,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+284,FM14,,NH4,Placebo,8,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+A004,Kelsey-1,,Ambient,Pathogen,1,Died,11/6/2020,,TL,9/15/2020,10/31/2020,11/11/2020,6
+A053,Acerv2,,Ambient,Pathogen,1,Died,11/3/2020,,,9/15/2020,10/31/2020,11/11/2020,3
+A057,Acerv2,,Ambient,Pathogen,1,Died,11/8/2020,,TL,9/15/2020,10/31/2020,11/11/2020,8
+A066,Elkhorn,,Ambient,Pathogen,1,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+A087,Elkhorn,,Ambient,Pathogen,1,Died,11/6/2020,,TL,9/15/2020,10/31/2020,11/11/2020,6
+A088,Elkhorn,,Ambient,Pathogen,1,Died,11/8/2020,,TL,9/15/2020,10/31/2020,11/11/2020,8
+A095,Kelsey-1,,Ambient,Pathogen,1,Lived,,11/6/2020,sampled as pair 11/6/2020,9/15/2020,10/31/2020,11/11/2020,11
+A104,U44,,Ambient,Pathogen,1,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+A110,U41,,Ambient,Pathogen,1,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+A113,U44,,Ambient,Pathogen,1,Died,11/7/2020,,TL,9/15/2020,10/31/2020,11/11/2020,7
+A115,U41,,Ambient,Pathogen,1,Died,11/6/2020,,TL,9/15/2020,10/31/2020,11/11/2020,6
+A166,K2,,Ambient,Pathogen,1,Died,11/8/2020,,,9/15/2020,10/31/2020,11/11/2020,8
+A180,FM19,,Ambient,Pathogen,1,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+A181,FM19,,Ambient,Pathogen,1,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+A182,FM19,,Ambient,Pathogen,1,Lived,,,"Healthy, sampled for histology 11/11/2020",9/15/2020,10/31/2020,11/11/2020,11
+208,FM9,,Ambient,Pathogen,1,Died,11/6/2020,,TL,9/15/2020,10/31/2020,11/11/2020,6
+228,FM9,,Ambient,Pathogen,1,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+230,FM6,,Ambient,Pathogen,1,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+243,FM6,,Ambient,Pathogen,1,Died,11/8/2020,,TL,9/15/2020,10/31/2020,11/11/2020,8
+256,FM6,,Ambient,Pathogen,1,Died,11/7/2020,,TL,9/15/2020,10/31/2020,11/11/2020,7
+264,FM14,,Ambient,Pathogen,1,Died,11/8/2020,,TL,9/15/2020,10/31/2020,11/11/2020,8
+358,FM19,,Ambient,Pathogen,1,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+A006,U44,"given placebo treatment in 1st infection trial, given pathogen treatment in 2nd infection trial",Ambient,Pathogen,2,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+A013,Kelsey-1,"given placebo treatment in 1st infection trial, given pathogen treatment in 2nd infection trial",Ambient,Pathogen,2,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+A020,Cooper-9,"given placebo treatment in 1st infection trial, given pathogen treatment in 2nd infection trial",Ambient,Pathogen,2,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+A035,Cooper-9,"given placebo treatment in 1st infection trial, given pathogen treatment in 2nd infection trial",Ambient,Pathogen,2,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+A042,Acerv2,"given placebo treatment in 1st infection trial, given pathogen treatment in 2nd infection trial",Ambient,Pathogen,2,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+A043,Acerv2,"given placebo treatment in 1st infection trial, given pathogen treatment in 2nd infection trial",Ambient,Pathogen,2,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+A050,Acerv2,"given placebo treatment in 1st infection trial, given pathogen treatment in 2nd infection trial",Ambient,Pathogen,2,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+A065,Elkhorn,"given placebo treatment in 1st infection trial, given pathogen treatment in 2nd infection trial",Ambient,Pathogen,2,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+A079,Elkhorn,"given placebo treatment in 1st infection trial, given pathogen treatment in 2nd infection trial",Ambient,Pathogen,2,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+A090,Elkhorn,"given placebo treatment in 1st infection trial, given pathogen treatment in 2nd infection trial",Ambient,Pathogen,2,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+A096,Kelsey-1,"given placebo treatment in 1st infection trial, given pathogen treatment in 2nd infection trial",Ambient,Pathogen,2,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+A099,Kelsey-1,"given placebo treatment in 1st infection trial, given pathogen treatment in 2nd infection trial",Ambient,Pathogen,2,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+A122,U44,"given placebo treatment in 1st infection trial, given pathogen treatment in 2nd infection trial",Ambient,Pathogen,2,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+A128,U44,"given placebo treatment in 1st infection trial, given pathogen treatment in 2nd infection trial",Ambient,Pathogen,2,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+A171,K2,"given placebo treatment in 1st infection trial, given pathogen treatment in 2nd infection trial",Ambient,Pathogen,2,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+A173,K2,"given placebo treatment in 1st infection trial, given pathogen treatment in 2nd infection trial",Ambient,Pathogen,2,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+A178,FM19,"given placebo treatment in 1st infection trial, given pathogen treatment in 2nd infection trial",Ambient,Pathogen,2,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+A193,FM19,"given placebo treatment in 1st infection trial, given pathogen treatment in 2nd infection trial",Ambient,Pathogen,2,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+A197,FM19,"given placebo treatment in 1st infection trial, given pathogen treatment in 2nd infection trial",Ambient,Pathogen,2,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+207,FM9,"given placebo treatment in 1st infection trial, given pathogen treatment in 2nd infection trial",Ambient,Pathogen,2,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+209,FM9,"given placebo treatment in 1st infection trial, given pathogen treatment in 2nd infection trial",Ambient,Pathogen,2,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+221,FM9,"given placebo treatment in 1st infection trial, given pathogen treatment in 2nd infection trial",Ambient,Pathogen,2,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+244,FM6,"given placebo treatment in 1st infection trial, given pathogen treatment in 2nd infection trial",Ambient,Pathogen,2,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+251,FM6,"given placebo treatment in 1st infection trial, given pathogen treatment in 2nd infection trial",Ambient,Pathogen,2,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+260,FM6,"given placebo treatment in 1st infection trial, given pathogen treatment in 2nd infection trial",Ambient,Pathogen,2,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+263,FM14,"given placebo treatment in 1st infection trial, given pathogen treatment in 2nd infection trial",Ambient,Pathogen,2,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+277,FM14,"given placebo treatment in 1st infection trial, given pathogen treatment in 2nd infection trial",Ambient,Pathogen,2,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+288,FM14,"given placebo treatment in 1st infection trial, given pathogen treatment in 2nd infection trial",Ambient,Pathogen,2,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+410,K2,"given placebo treatment in 1st infection trial, given pathogen treatment in 2nd infection trial",Ambient,Pathogen,2,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+A001,Kelsey-1,,NH4,Pathogen,3,Died,11/5/2020,,TL,9/15/2020,10/31/2020,11/11/2020,5
+A011,U44,,NH4,Pathogen,3,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+A024,Cooper-9,,NH4,Pathogen,3,Died,11/8/2020,,TL,9/15/2020,10/31/2020,11/11/2020,8
+A064,Elkhorn,,NH4,Pathogen,3,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+A067,U44,,NH4,Pathogen,3,Died,11/6/2020,,TL,9/15/2020,10/31/2020,11/11/2020,6
+A075,Elkhorn,,NH4,Pathogen,3,Died,11/7/2020,,TL,9/15/2020,10/31/2020,11/11/2020,7
+A084,Elkhorn,,NH4,Pathogen,3,Lived,,11/7/2020,Sampled as a pair 11/7/2020,9/15/2020,10/31/2020,11/11/2020,11
+A100,Kelsey-1,,NH4,Pathogen,3,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+A116,U41,,NH4,Pathogen,3,Died,11/6/2020,,TL,9/15/2020,10/31/2020,11/11/2020,6
+A119,U41,,NH4,Pathogen,3,Died,11/6/2020,,TL,9/15/2020,10/31/2020,11/11/2020,6
+A125,U41,,NH4,Pathogen,3,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+A130,U44,,NH4,Pathogen,3,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+A152,K2,,NH4,Pathogen,3,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+A158,K2,,NH4,Pathogen,3,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+A167,K2,,NH4,Pathogen,3,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+A175,FM19,,NH4,Pathogen,3,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+A184,FM19,,NH4,Pathogen,3,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+201,FM9,,NH4,Pathogen,3,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+202,FM9,,NH4,Pathogen,3,Died,11/6/2020,,TL,9/15/2020,10/31/2020,11/11/2020,6
+232,FM6,,NH4,Pathogen,3,Died,11/6/2020,,TL,9/15/2020,10/31/2020,11/11/2020,6
+265,FM14,,NH4,Pathogen,3,Died,11/6/2020,,TL,9/15/2020,10/31/2020,11/11/2020,6
+289,FM14,,NH4,Pathogen,3,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+291,FM14,,NH4,Pathogen,3,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+A041,Acerv2,,NH4,Pathogen,4,Died,11/3/2020,,TL,9/15/2020,10/31/2020,11/11/2020,3
+A078,Elkhorn,,NH4,Pathogen,4,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+A089,Elkhorn,,NH4,Pathogen,4,Died,11/6/2020,,TL,9/15/2020,10/31/2020,11/11/2020,6
+A102,U44,,NH4,Pathogen,4,Died,11/7/2020,,TL in center,9/15/2020,10/31/2020,11/11/2020,7
+A111,U44,,NH4,Pathogen,4,Died,11/6/2020,,TL,9/15/2020,10/31/2020,11/11/2020,6
+A129,U44,,NH4,Pathogen,4,Died,11/6/2020,,TL,9/15/2020,10/31/2020,11/11/2020,6
+A157,K2,,NH4,Pathogen,4,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+A179,FM19,,NH4,Pathogen,4,Died,11/7/2020,,TL,9/15/2020,10/31/2020,11/11/2020,7
+A199,FM9,,NH4,Pathogen,4,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+216,FM9,,NH4,Pathogen,4,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+222,FM9,,NH4,Pathogen,4,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+235,FM6,,NH4,Pathogen,4,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+237,FM6,,NH4,Pathogen,4,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+238,FM6,,NH4,Pathogen,4,Died,11/8/2020,,TL,9/15/2020,10/31/2020,11/11/2020,8
+270,FM14,,NH4,Pathogen,4,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+285,FM14,,NH4,Pathogen,4,Lived,,,Lived to the end of experiment,9/15/2020,10/31/2020,11/11/2020,11
+296,FM14,,NH4,Pathogen,4,Died,11/6/2020,,TL,9/15/2020,10/31/2020,11/11/2020,6
+A016,Cooper-9,,Ambient,Pathogen,,Died,11/5/2020,,thin tissue,9/15/2020,10/31/2020,11/11/2020,5
+A121,U44,,Ambient,Pathogen,,Died,11/4/2020,,TL,9/15/2020,10/31/2020,11/11/2020,4
+283,FM14,,Ambient,Pathogen,,Died,11/6/2020,,TL,9/15/2020,10/31/2020,11/11/2020,6
+A027,Cooper-9,,NH4,Pathogen,,Died,11/4/2020,,TL,9/15/2020,10/31/2020,11/11/2020,4
+A097,Kelsey-1,,NH4,Pathogen,,Died,10/31/2020,,Died from nutrients,9/15/2020,10/31/2020,11/11/2020,0
+A163,K2,,NH4,Pathogen,,Died,11/5/2020,,"TL, disease",9/15/2020,10/31/2020,11/11/2020,5
+A183,FM19,,NH4,Pathogen,,Died,11/5/2020,,thin tissue,9/15/2020,10/31/2020,11/11/2020,5
+227,FM9,,Ambient,Placebo,,Lived,,11/6/2020,Sampled as a pair 11/6/2020,9/15/2020,10/31/2020,11/11/2020,11
+A056,Acerv2,,NH4,Placebo,,Died,11/2/2020,,TL,9/15/2020,10/31/2020,11/11/2020,2
+A018,Cooper-9,,NH4,Placebo,,Died,11/4/2020,,TL,9/15/2020,10/31/2020,11/11/2020,4
+A010,Kelsey-1,,NH4,Placebo,,Died,11/5/2020,,thin tissue,9/15/2020,10/31/2020,11/11/2020,5
+A034,Cooper-9,,NH4,Placebo,,Died,11/1/2020,,TL,9/15/2020,10/31/2020,11/11/2020,1
+A022,Cooper-9,,NH4,Pathogen,,Died,10/31/2020,,TL,9/15/2020,10/31/2020,11/11/2020,0
+A021,Cooper-9,,NH4,Pathogen,,Died,11/1/2020,,TL,9/15/2020,10/31/2020,11/11/2020,1
+A046,Acerv2,,NH4,Pathogen,,Died,11/3/2020,,TL,9/15/2020,10/31/2020,11/11/2020,3
+A030,Cooper-9,,Ambient,Pathogen,,Died,11/3/2020,,TL,9/15/2020,10/31/2020,11/11/2020,3
+A039,Acerv2,,NH4,Pathogen,,Died,11/3/2020,,TL,9/15/2020,10/31/2020,11/11/2020,3
+A007,Kelsey-1,,NH4,Placebo,,Died,11/4/2020,,TL,9/15/2020,10/31/2020,11/11/2020,4
+205,FM9,,NH4,Pathogen,,Died,11/4/2020,,TL,9/15/2020,10/31/2020,11/11/2020,4
+253,FM6,,NH4,Pathogen,,Died,11/4/2020,,TL,9/15/2020,10/31/2020,11/11/2020,4
+A118,U41,,NH4,Pathogen,,Died,11/4/2020,,TL,9/15/2020,10/31/2020,11/11/2020,4
+A101,Kelsey-1,,NH4,Placebo,,Died,11/5/2020,,TL,9/15/2020,10/31/2020,11/11/2020,5
+A045,Acerv2,,NH4,Placebo,,Died,11/5/2020,,TL,9/15/2020,10/31/2020,11/11/2020,5

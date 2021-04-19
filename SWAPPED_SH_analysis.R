@@ -113,3 +113,4 @@ SWAPPED_genobar = ggplot(SWAPPED_summaryb4geno, aes(fill=Nutrients, y=A.Acerv, x
 SWAPPED_genobar = SWAPPED_genobar+geom_errorbar(aes(ymin=A.Acerv-se, ymax=A.Acerv+se), width=.1, size= 0.5, 
                                 position=position_dodge(.9))
 SWAPPED_genobar
+
