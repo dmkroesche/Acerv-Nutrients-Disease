@@ -23,7 +23,8 @@ rm(list=ls())
 NDSH = read_csv("qPCR samples_R.csv") #S/H data
 ND_all = read_csv("All_ND_R.csv") # all frags survivorship
 
-#format as dates in a tibble
+#format dates, added binary variable "category" to NDSH, 
+# added "SurvivalTime" variable, added "SH" variable (A.Acerv on log10 scale)
 NDSH <-  NDSH %>% 
   mutate(
     `Date Disease` = mdy(`Date Disease`), 
@@ -33,10 +34,14 @@ NDSH <-  NDSH %>%
     category=ifelse(Mortality=="Lived", 0, 1),
     SH=log10(A.Acerv)
   )
+
+# nutrients, diseased, and combo variables in NDSH converted from "character" type data to "factor" type
 NDSH$Combo <- as.factor(NDSH$Combo)
 NDSH$Diseased <- as.factor(NDSH$Diseased)
 NDSH$Nutrients <- as.factor(NDSH$Nutrients)
 
+
+# same thing as above for ND_all data frame
 ND_all <-  ND_all %>% 
   mutate(
     survivalTime= `Days Survived`,
@@ -44,13 +49,17 @@ ND_all <-  ND_all %>%
     Disease=as.factor(Disease),
     Nutrients=as.factor(Nutrients)
   )
-NDSH$Combo <- as.factor(NDSH$Combo)
-NDSH$Diseased <- as.factor(NDSH$Diseased)
-NDSH$Nutrients <- as.factor(NDSH$Nutrients)
+
+ND_all$Disease <- as.factor(ND_all$Disease)
+ND_all$Nutrients <- as.factor(ND_all$Nutrients)
 # calculate the difference between start and end time in days.
 ### Error: Problem with `mutate()` input `timesurvived`.
 ### x character string is not in a standard unambiguous format
 ### i Input `timesurvived` is `as.numeric(difftime(Date.of.Mortality, Date.Disease, units = "days"))`.
+
+
+# survMod is a Cox Fit Proportional Hazards Regression Model
+?coxph
 survMod <- coxph(Surv(survivalTime, category)~Diseased+SH, data=NDSH)
 summary(survMod)
 
