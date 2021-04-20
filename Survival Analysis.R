@@ -86,7 +86,7 @@ ggsurvplot(fit = survfit(Surv(survivalTime, category)~Diseased, data=NDSH))
 datSH <- NDSH %>%
   filter(Diseased=='Pathogen', Timepoint=="T1")
 
-
+# Coxph of just disease treatment fragments. SH not important for survival within the disease treatment.
 shMod <- coxph(Surv(survivalTime, category)~SH, data=datSH)
 summary(shMod)
 
