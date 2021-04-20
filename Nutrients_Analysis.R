@@ -22,7 +22,12 @@ NH4_line=NH4_line+labs(y='NH4 (uM)', title='Ammonium Concentrations')
 NH4_line
 
 # NH4 line graph grouped by treatment
-
+NH4_group=ggplot(NH4data, aes(x=Timepoint, y=NH4, group=Treatment, color=Treatment)) +
+  geom_line()
+NH4_group=NH4_group+scale_fill_brewer(palette="Spectral")
+NH4_group=NH4_group+geom_point(size=1)
+NH4_group=NH4_group+labs(y='NH4 (uM)', title='Ammonium Concentrations')
+NH4_group
 
 
 # Graph other Nutrients
