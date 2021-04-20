@@ -86,13 +86,14 @@ ggsurvplot(fit = survfit(Surv(survivalTime, category)~Diseased, data=NDSH))
 datSH <- NDSH %>%
   filter(Diseased=='Pathogen', Timepoint=="T1")
 
-
+# Coxph of just disease treatment fragments. SH not important for survival within the disease treatment.
 shMod <- coxph(Surv(survivalTime, category)~SH, data=datSH)
 summary(shMod)
 
 datSH <- NDSH %>%
-  filter(Diseased=='Pathogen')
+  filter(Diseased=='Pathogen') #this is the same code from above to make a subset?
 
+#This didn't work. Not sure what this was supposed to be. 
 ggsurvplot(fit = survfit(Surv(survivalTime, category)~log10(A.Acerv), data=datSH))
 
 predSH <- expand.grid(SH=-seq(.5, 1.3, 0.05))
