@@ -58,6 +58,12 @@ ND_all$Nutrients <- as.factor(ND_all$Nutrients)
 ### i Input `timesurvived` is `as.numeric(difftime(Date.of.Mortality, Date.Disease, units = "days"))`.
 
 
+# survMod is a Cox Fit Proportional Hazards Regression Model
+?coxph
+survMod <- coxph(Surv(survivalTime, category)~Diseased+SH, data=NDSH)
+summary(survMod)
+
+
 # "coxph" fits a Cox Proportional Hazards Regression Model. 
 # Below are Cox PHRM's for the NDSH data frame.
 ?coxph
