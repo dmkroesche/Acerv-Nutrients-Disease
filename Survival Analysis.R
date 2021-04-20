@@ -93,9 +93,10 @@ summary(shMod)
 datSH <- NDSH %>%
   filter(Diseased=='Pathogen') #this is the same code from above to make a subset?
 
-#This didn't work. Not sure what this was supposed to be. 
+#This didn't work. Not sure what this was supposed to be. Graph made a separate category for every SH value. 
 ggsurvplot(fit = survfit(Surv(survivalTime, category)~log10(A.Acerv), data=datSH))
 
+# This shows how SH does not predict relative risk (I think)
 predSH <- expand.grid(SH=-seq(.5, 1.3, 0.05))
 fitSH <- data.frame(predict(shMod, type='risk', se.fit=TRUE, newdata=predSH))
 fitSH <- cbind(predSH, fitSH) 
@@ -105,6 +106,8 @@ ggplot(fitSH, aes(SH, fit)) +
   geom_ribbon(aes(ymin=fit-se.fit, ymax=fit+se.fit), alpha=0.3) +
   geom_hline(yintercept = 1, color='red')
 
+# Coxph for the ND_all data frame. This has more data than NDSH. Elevated nutrients appears to effect survivorship for pathogen treatments.
+# not sure if I understand this one 100%
 survMod <- coxph(Surv(survivalTime, category)~Disease*Nutrients, data=ND_all)
 summary(survMod)
 survdiff(Surv(survivalTime, category)~Disease+Nutrients, data=ND_all)
