@@ -50,5 +50,6 @@ NO3_line=NO3_line+geom_point(size=1)
 NO3_line=NO3_line+labs(y='NO3 (uM)', title='Nitrate Concentrations')
 NO3_line
 
-#### ask Rich how to assign color palettes 
+# find average difference in ammonium (1) overall (2) before disease phase
+
 
