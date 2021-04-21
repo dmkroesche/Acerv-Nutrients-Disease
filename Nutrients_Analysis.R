@@ -50,6 +50,12 @@ NO3_line=NO3_line+geom_point(size=1)
 NO3_line=NO3_line+labs(y='NO3 (uM)', title='Nitrate Concentrations')
 NO3_line
 
-# find average difference in ammonium (1) overall (2) before disease phase
-
-lklkl
+# find average difference in ammonium (1) overall (2) before disease phase (3) after disease phase
+#(1)
+tapply(NH4data$NH4,NH4data$Nutrients,mean)
+#(2)
+NH4only = subset(NH4data, Timepoint<'50')
+tapply(NH4only$NH4,NH4only$Nutrients,mean)
+#(3)
+diseasephase = subset(NH4data, Timepoint>'50')
+tapply(diseasephase$NH4,diseasephase$Nutrients,mean)
