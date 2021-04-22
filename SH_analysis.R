@@ -63,7 +63,8 @@ SHb4afterscatter
 
 # Basic box plot for before and after disease (not sure I'll include this either)
 SHboxb4 <- ggplot(b4disease, aes(x=Nutrients, y=A.Acerv)) + 
-  geom_boxplot()
+  geom_boxplot()+
+  labs(title="Symbiont Abundance after Six Weeks of Elevated Ammonium", y="S/H Ratio", x="Treatment")
 SHboxb4
 
 SHboxafter <- ggplot(afterdisease, aes(x=Nutrients, y=A.Acerv)) + 
@@ -121,15 +122,14 @@ shapiro.test(resid(b4ANOVA))
 qqnorm(resid(b4ANOVA))
 qqline(resid(b4ANOVA,lty=2))
 
-### Do a non-parametric instead
-### Distribution is not normal. Log transform or use Kruskal-Wallace test?
-
-# general t-test to test if the difference in the means is significant
-t.test(b4disease$A.Acerv ~ b4disease$Nutrients, var.equal=TRUE)
+### Do a non-parametric instead: 2 sided Wilcoxon Sum Rank Test
+### Distribution is not normal. 
+?wilcox.test()
+wilcox.test(b4disease$A.Acerv ~ b4disease$Nutrients, var.equal=TRUE)
 
 # p-value = 0.7469 is not below 0.05, no significant difference
 
-# specific t-test to see if S/H for Ambient is significantly greater than NH4
+# specific Wilcox Test to see if S/H for Ambient is significantly greater than NH4
 # create vectors for each treatment
 b4Ambient=b4disease$A.Acerv[b4disease$Nutrients=='Ambient']
 b4Ambient
@@ -146,7 +146,7 @@ afterNH4=afterdisease$A.Acerv[afterdisease$Nutrients=='NH4']
 afterNH4
 
 #now we can do a one-sided t-test for before disease exposure
-t.test(b4Ambient,b4NH4,alternative = 'greater',var.equal=TRUE)
+wilcox.test(b4Ambient,b4NH4,alternative = 'greater',var.equal=TRUE)
 #report the results as "A one-sided T-test found that the S/H ratio is not significantly higher for corals exposed to the Ambient treatment than the NH4 treatment.
 
 #same thing for after disease exposure. One sided t-test
@@ -169,7 +169,11 @@ genobar
 genoANOVA=aov(A.Acerv~Genotype:Nutrients,b4disease)
 summary(genoANOVA)
 
-TukeyHSD(genoANOVA)
+genoANOVA2=aov(A.Acerv~Genotype+Nutrients,b4disease)
+summary(genoANOVA2)
+
+TukeyHSD(genoANOVA, conf.level = 0.95)
+TukeyHSD(genoANOVA2, conf.level = 0.95)
 
 #grouped bar by genotype and tank (not enough replication per tank for error bars)
 summarygenotank=summarySE(b4disease,measurevar = 'A.Acerv',groupvars = c('Genotype','Tank_D1'))
