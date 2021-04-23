@@ -80,8 +80,8 @@ summary(survMod_dis_nut)
 surv_pvalue(fit=survMod_dis_nut) # surv_pvalue didn't work. Ask Rich maybe.
 
 # Plot of survival probability of pathogen vs. placebo over time
-ggsurvplot(fit = survfit(Surv(survivalTime, category)~Diseased, data=NDSH))
-
+ggsurvplot(fit = survfit(Surv(survivalTime, category)~Diseased, data=NDSH))+
+labs(title="A. cervicornis Survivorship by Disease Treatment")
 # datSH is a subset of NDSH with only Pathogen treatment fragments. 
 datSH <- NDSH %>%
   filter(Diseased=='Pathogen', Timepoint=="T1")
@@ -111,8 +111,8 @@ ggplot(fitSH, aes(SH, fit)) +
 survMod <- coxph(Surv(survivalTime, category)~Disease*Nutrients, data=ND_all)
 summary(survMod)
 survdiff(Surv(survivalTime, category)~Disease+Nutrients, data=ND_all)
-ggsurvplot(fit = survfit(Surv(survivalTime, category)~Disease+Nutrients, data=ND_all))
-
+ggsurvplot(fit = survfit(Surv(survivalTime, category)~Disease+Nutrients, data=ND_all))+
+labs(title = "A. cervicornis Survivorship by Nutrients-Disease Combination")
 #Take out tank 2
 dat <- ND_all %>%
   filter(Tank!=2| is.na(Tank))
