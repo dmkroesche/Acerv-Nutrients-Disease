@@ -84,9 +84,6 @@ summary(shMod)
 datSH <- NDSH %>%
   filter(Diseased=='Pathogen') #this is the same code from above to make a subset?
 
-#This didn't work. Not sure what this was supposed to be. Graph made a separate category for every SH value. 
-ggsurvplot(fit = survfit(Surv(survivalTime, category)~log10(A.Acerv), data=datSH))
-
 # This shows how SH does not predict relative risk (I think)
 predSH <- expand.grid(SH=-seq(.5, 1.3, 0.05))
 fitSH <- data.frame(predict(shMod, type='risk', se.fit=TRUE, newdata=predSH))
@@ -116,7 +113,6 @@ survMod <- coxph(Surv(survivalTime, category)~Disease*Nutrients, data=dat)
 summary(survMod)
 ggsurvplot(fit = survfit(Surv(survivalTime, category)~Disease+Nutrients, data=dat))+
   labs(title = "A. cervicornis Survivorship by Nutrients-Disease Combination")
-
 datPro <- ND_all %>%
   mutate(Treatment=as.factor(ifelse(Tank==2, "Probiotic", "noPri")))
 
@@ -132,6 +128,8 @@ ggsurvplot(fit = survfit(Surv(survivalTime, category)~Disease+Treatment, data=da
 # Genotype-Treatemntmodel
 
 dat$Treatment<-paste(dat$Nutrients, dat$Disease, sep = "-" )
+dat <- dat %>%
+  filter(Genotype!="U41"| is.na(Genotype))
 
 # Kaplan-Meier estimator. The "log-log" confidence interval is preferred.
 fit2 <- survfit(Surv(survivalTime, category) ~ Genotype + Treatment, data = dat)
@@ -152,7 +150,10 @@ ggsurvplot_facet(fit2, data = dat,
                  # risk.table=T, tables.height=0.5, 
                  nrow = 3, alpha=1, linetype=1) +
   geom_vline(xintercept = 46, linetype="dashed", color = "gray")+
+  scale_color_manual(values = c("red", "light blue","dark red","dark blue"))+
   labs(title="Survivorship by Genotype: Disease Phase")
+  
+  ?scale_color_manual
 #######################################################################################
 
 # same thing as above, using Ana's .csv so that it includes nutrients only phase 
@@ -166,7 +167,8 @@ Survival.data$Date<-as.Date(Survival.data$Date)
 Survival.data$Day<-as.numeric(Survival.data$Date)-18518
 Survival.data$Fu.time_texp<-Survival.data$Day
 Survival.data$Treatment<-paste(Survival.data$Nutrients, Survival.data$Disease, sep = "-" )
-
+Survival.data <- Survival.data %>%
+  filter(Genotype!="U41"| is.na(Genotype))
 summary(Survival.data$Genotype)
 
 #Survival.data$Genotype<-factor 
@@ -185,7 +187,7 @@ Survival.data_1$Treatment<-factor(Survival.data_1$Treatment,
                                              "NH4-Placebo", "NH4-Pathogen"))
 Survival.data_1$Genotype<-factor(Survival.data_1$Genotype, 
                                  levels=c("FM19", "U44","FM6", "FM9","FM14", "Elkhorn",
-                                          "K2", "Acerv2", "Kelsey-1", "Cooper-9", "U41"))
+                                          "K2", "Acerv2", "Kelsey-1", "Cooper-9"))
 summary(Survival.data_1$Genotype)
 summary(Survival.data_1$Treatment)
 
@@ -224,6 +226,7 @@ TreatmentP<-ggsurvplot_facet(fit2, data = Survival.data_1,
            colour = "black", linetype=1)+
   annotate("point",x=c(58), y=c(0), 
            shape=4, size=2)+
+  scale_color_manual(values = c("light blue", "red","dark blue","dark red"))+
   labs(title="Survivorship by Genotype: Nutrients and Disease Phases")
 TreatmentP
 
