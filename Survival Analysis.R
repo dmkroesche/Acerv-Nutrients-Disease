@@ -52,24 +52,27 @@ ND_all <-  ND_all %>%
 
 ND_all$Disease <- as.factor(ND_all$Disease)
 ND_all$Nutrients <- as.factor(ND_all$Nutrients)
-# calculate the difference between start and end time in days.
-### Error: Problem with `mutate()` input `timesurvived`.
-### x character string is not in a standard unambiguous format
-### i Input `timesurvived` is `as.numeric(difftime(Date.of.Mortality, Date.Disease, units = "days"))`.
 
+#################################################################################
+
+# ***********NDSH data frame**************
 
 #  "coxph" = Cox Fit Proportional Hazards Regression Model
 # this one is a Cox PH Model of disease and S/H Ratio on survival time
-# Below are Cox PH's for the NDSH data frame.
+# NOTE: Tank 2 already removed
 ?coxph
 
-# Coxph #1: Disease matters for survival, SH doesn't 
+# Coxph #1: disease+SH
+# Disease matters for survival, SH doesn't 
 survMod_dis_SH <- coxph(Surv(survivalTime, category)~Diseased+SH, data=NDSH)
 summary(survMod_dis_SH)
 
-# add diseased*SH
+# Coxph #2: diseased*SH
+survMod_dis_SH2 <- coxph(Surv(survivalTime, category)~Diseased*SH, data=NDSH)
+summary(survMod_dis_SH2)
 
 # Kaplan-Meier Plot #1: survival probability curve of pathogen vs. placebo over time
+# *** better if done with ND_all data
 ggsurvplot(fit = survfit(Surv(survivalTime, category)~Diseased, data=NDSH))+
 labs(title="A. cervicornis Survivorship by Disease Treatment")
 
@@ -81,10 +84,8 @@ datSH <- NDSH %>%
 shMod <- coxph(Surv(survivalTime, category)~SH, data=datSH)
 summary(shMod)
 
-datSH <- NDSH %>%
-  filter(Diseased=='Pathogen') #this is the same code from above to make a subset?
 
-# This shows how SH does not predict relative risk (I think)
+# This shows how SH does not predict relative risk
 predSH <- expand.grid(SH=-seq(.5, 1.3, 0.05))
 fitSH <- data.frame(predict(shMod, type='risk', se.fit=TRUE, newdata=predSH))
 fitSH <- cbind(predSH, fitSH) 
@@ -94,25 +95,40 @@ ggplot(fitSH, aes(SH, fit)) +
   geom_ribbon(aes(ymin=fit-se.fit, ymax=fit+se.fit), alpha=0.3) +
   geom_hline(yintercept = 1, color='red')
 
-# Coxph for the ND_all data frame. This has more data than NDSH. Elevated nutrients appears to effect survivorship for pathogen treatments.
-# not sure if I understand this one 100%
+#######################################################################################
+
+# ***********ND_all data frame**************
+
+# This has more data than NDSH. 
+# Use this for everything except SH (for obvious reasons)
+
+# Coxph #4: don't use this because tank 2 was not removed yet. Redo with tank 2 removed
 survMod <- coxph(Surv(survivalTime, category)~Disease*Nutrients, data=ND_all)
 summary(survMod)
 survdiff(Surv(survivalTime, category)~Disease+Nutrients, data=ND_all)
 ggsurvplot(fit = survfit(Surv(survivalTime, category)~Disease+Nutrients, data=ND_all))+
 labs(title = "A. cervicornis Survivorship by Nutrients-Disease Combination")
+
+###############################################################################
+
+#Tank 2 taken out for everything below. This is important because tank 2 behaved strangely (probiotic? idk)
+
 #Take out tank 2
 dat <- ND_all %>%
   filter(Tank!=2| is.na(Tank))
 
+#mutate(Treatment=ifelse(Tank==2, "Probiotic", "Nothing"))
 
-
-#mutate(Treatment=ifelse(Tank==2, "Probiotic", "NOthing")) ******** use this
-# Cox PH of Nutrients Disease interaction
+# Coxph #5: of Nutrients Disease interaction ******** use this
 survMod <- coxph(Surv(survivalTime, category)~Disease*Nutrients, data=dat)
 summary(survMod)
+
+# Kaplan-Meier plot #2: Nutrients and disease treatment w. tank 2 removed
+# ********** use this
 ggsurvplot(fit = survfit(Surv(survivalTime, category)~Disease+Nutrients, data=dat))+
   labs(title = "A. cervicornis Survivorship by Nutrients-Disease Combination")
+
+# Kaplan-Meier plot #3: "Probiotic" plot ******* put this on hold for now
 datPro <- ND_all %>%
   mutate(Treatment=as.factor(ifelse(Tank==2, "Probiotic", "noPri")))
 
@@ -122,10 +138,12 @@ summary(proMod)
 ggsurvplot(fit = survfit(Surv(survivalTime, category)~Disease+Treatment, data=datPro))
 
 ############################################################################################
-# make a plot with seperate survivorship curves for each genotype
-#copied and edited from Ana's github
 
-# Genotype-Treatemntmodel
+# make a plot with seperate survivorship curves for each genotype
+
+#below copied and edited from Ana's github
+
+# Genotype-Treatemnt model
 
 dat$Treatment<-paste(dat$Nutrients, dat$Disease, sep = "-" )
 dat <- dat %>%
@@ -152,13 +170,20 @@ ggsurvplot_facet(fit2, data = dat,
   geom_vline(xintercept = 46, linetype="dashed", color = "gray")+
   scale_color_manual(values = c("red", "light blue","dark red","dark blue"))+
   labs(title="Survivorship by Genotype: Disease Phase")
-  
-  ?scale_color_manual
+
+# Cox PH #6: Genotype*Treatment ********** genuinely confused about what I did here. 
+survMod_geno <- coxph(Surv(survivalTime, category)~Genotype*Treatment, data=dat)
+summary(survMod_geno)
+
+# Cox PH #7:
+survMod_geno2 <- coxph(Surv(survivalTime, category)~Genotype+Treatment, data=dat)
+summary(survMod_geno2)
+
 #######################################################################################
 
 # same thing as above, using Ana's .csv so that it includes nutrients only phase 
 
-# Importa and organize data
+# Import and organize data
 
 # Data
 Survival.data<-read.csv("Acer_Mortality2.csv", header = TRUE)
