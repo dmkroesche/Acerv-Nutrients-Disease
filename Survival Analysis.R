@@ -67,21 +67,17 @@ ND_all$Nutrients <- as.factor(ND_all$Nutrients)
 survMod_dis_SH <- coxph(Surv(survivalTime, category)~Diseased+SH, data=NDSH)
 summary(survMod_dis_SH)
 
-# Coxph #2: Disease treatment matters for survival, Nutrients treatment doesn't
+# add diseased*SH
 
-survMod_dis_nut <- coxph(Surv(survivalTime, category)~Diseased+Nutrients, data=NDSH)
-summary(survMod_dis_nut)
-
-surv_pvalue(fit=survMod_dis_nut) # surv_pvalue didn't work. Ask Rich maybe.
-
-# Plot of survival probability of pathogen vs. placebo over time
+# Kaplan-Meier Plot #1: survival probability curve of pathogen vs. placebo over time
 ggsurvplot(fit = survfit(Surv(survivalTime, category)~Diseased, data=NDSH))+
 labs(title="A. cervicornis Survivorship by Disease Treatment")
+
 # datSH is a subset of NDSH with only Pathogen treatment fragments. 
 datSH <- NDSH %>%
   filter(Diseased=='Pathogen', Timepoint=="T1")
 
-# Coxph of just disease treatment fragments. SH not important for survival within the disease treatment.
+# Coxph #3: of just disease treatment fragments. SH not important for survival within the disease treatment.
 shMod <- coxph(Surv(survivalTime, category)~SH, data=datSH)
 summary(shMod)
 
@@ -114,11 +110,12 @@ dat <- ND_all %>%
 
 
 
-#mutate(Treatment=ifelse(Tank==2, "Probiotic", "NOthing"))
-
+#mutate(Treatment=ifelse(Tank==2, "Probiotic", "NOthing")) ******** use this
+# Cox PH of Nutrients Disease interaction
 survMod <- coxph(Surv(survivalTime, category)~Disease*Nutrients, data=dat)
 summary(survMod)
-ggsurvplot(fit = survfit(Surv(survivalTime, category)~Disease+Nutrients, data=dat))
+ggsurvplot(fit = survfit(Surv(survivalTime, category)~Disease+Nutrients, data=dat))+
+  labs(title = "A. cervicornis Survivorship by Nutrients-Disease Combination")
 
 datPro <- ND_all %>%
   mutate(Treatment=as.factor(ifelse(Tank==2, "Probiotic", "noPri")))
@@ -127,4 +124,108 @@ proMod <- coxph(Surv(survivalTime, category)~Disease+Treatment, data=datPro)
 summary(proMod)
 
 ggsurvplot(fit = survfit(Surv(survivalTime, category)~Disease+Treatment, data=datPro))
+
+############################################################################################
+# make a plot with seperate survivorship curves for each genotype
+#copied and edited from Ana's github
+
+# Genotype-Treatemntmodel
+
+dat$Treatment<-paste(dat$Nutrients, dat$Disease, sep = "-" )
+
+# Kaplan-Meier estimator. The "log-log" confidence interval is preferred.
+fit2 <- survfit(Surv(survivalTime, category) ~ Genotype + Treatment, data = dat)
+summary(fit2)
+
+# Plot the survival model
+GenTre<-ggsurvplot(fit2, data = dat, pval = TRUE,
+                   risk.table=F,  tables.height=0.5)
+GenTre
+
+ggsurvplot_facet(fit2, data = dat, facet.by="Treatment", 
+                 #risk.table=T, tables.height=0.5, 
+                 nrow = 6, alpha=1,
+                 linetype=1) +
+  geom_vline(xintercept = 46, linetype="dashed", color = "gray")
+ggsurvplot_facet(fit2, data = dat, 
+                 facet.by="Genotype", 
+                 # risk.table=T, tables.height=0.5, 
+                 nrow = 3, alpha=1, linetype=1) +
+  geom_vline(xintercept = 46, linetype="dashed", color = "gray")+
+  labs(title="Survivorship by Genotype: Disease Phase")
+#######################################################################################
+
+# same thing as above, using Ana's .csv so that it includes nutrients only phase 
+
+# Importa and organize data
+
+# Data
+Survival.data<-read.csv("Acer_Mortality2.csv", header = TRUE)
+summary(Survival.data)
+Survival.data$Date<-as.Date(Survival.data$Date)
+Survival.data$Day<-as.numeric(Survival.data$Date)-18518
+Survival.data$Fu.time_texp<-Survival.data$Day
+Survival.data$Treatment<-paste(Survival.data$Nutrients, Survival.data$Disease, sep = "-" )
+
+summary(Survival.data$Genotype)
+
+#Survival.data$Genotype<-factor 
+#   (Survival.data$Genotype, 
+#   levels=c("G_48", "G_62","G_31", "G_08","G_07", "G_50"))
+Survival.data$Genotype<-as.factor(Survival.data$Genotype)
+summary(Survival.data$Genotype)
+
+## Model 2 (Genotype-Treatemnt) with experimnatl data (excluding cooked tank)
+
+# Filter data 
+Survival.data_1<-Survival.data
+Survival.data_1<-filter(Survival.data_1, Treatment!="Ambient-Heat")
+Survival.data_1$Treatment<-factor(Survival.data_1$Treatment,
+                                  levels = c("Ambient-Placebo", "Ambient-Pathogen",
+                                             "NH4-Placebo", "NH4-Pathogen"))
+Survival.data_1$Genotype<-factor(Survival.data_1$Genotype, 
+                                 levels=c("FM19", "U44","FM6", "FM9","FM14", "Elkhorn",
+                                          "K2", "Acerv2", "Kelsey-1", "Cooper-9", "U41"))
+summary(Survival.data_1$Genotype)
+summary(Survival.data_1$Treatment)
+
+# Create survival object (Fit survival data using the Kaplan-Meier method)
+surv_object_1 <- Surv(time = Survival.data_1$Fu.time_texp, 
+                      event = Survival.data_1$Fu.stat_exp)
+surv_object_1 
+
+# Kaplan-Meier estimator. The "log-log" confidence interval is- preferred.
+
+fit2 <- survfit(surv_object_1 ~ Genotype + Treatment, data = Survival.data_1)
+summary(fit2)
+# Plot the survival model
+GenTre_1<-ggsurvplot(fit2, data = Survival.data_1, pval = TRUE,
+                     risk.table=F,  tables.height=0.5)
+GenTre_1
+
+GenotypeP<-ggsurvplot_facet(fit2, data = Survival.data_1, facet.by="Treatment", 
+                            risk.table=F, # tables.height=0.5, 
+                            nrow = 6, alpha=1, linetype=1) +
+  geom_vline(xintercept = 46, linetype="dashed", 
+             color = "gray")
+GenotypeP
+TreatmentP<-ggsurvplot_facet(fit2, data = Survival.data_1, 
+                             facet.by="Genotype", 
+                             # risk.table=T, tables.height=0.5, 
+                             nrow = 3, alpha=1,
+                             linetype=1) +
+  geom_vline(xintercept = 48, linetype="dashed", 
+             color = "gray") +
+  annotate("segment", x = 36, xend = 51, y = 0, yend = 0,
+           colour = "black", linetype=3)+
+  annotate("point",x=c(47), y=c(0), 
+           shape=4, size=2)+
+  annotate("segment", x = 52, xend = 57, y = 0, yend = 0,
+           colour = "black", linetype=1)+
+  annotate("point",x=c(58), y=c(0), 
+           shape=4, size=2)+
+  labs(title="Survivorship by Genotype: Nutrients and Disease Phases")
+TreatmentP
+
+
 

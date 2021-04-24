@@ -1,0 +1,246 @@
+Fragment,Genotype,Nutrients,Disease,A_Tank,D_Tank,D_Tank2,Date,Notes,Fu.time_texp,Fu.stat_exp
+A004,Kelsey-1,Ambient,Pathogen,5,1,1,2020-11-06,"Thing tissue, not sure ",,1
+A005,Kelsey-1,Ambient,Pathogen,1,1,1,2020-11-05,TL base,,1
+A016,Cooper-9,Ambient,Pathogen,6,1,1,2020-11-05,TL/thinning tissue,,1
+A030,Cooper-9,Ambient,Pathogen,1,1,1,2020-11-03,Almost completley gone,,1
+A031,Cooper-9,Ambient,Pathogen,1,1,,2020-11-06,TL base,,1
+A049,Acerv2,Ambient,Pathogen,5,1,,2020-11-06,TL center,,1
+A053,Acerv2,Ambient,Pathogen,1,1,1,2020-11-03,TL on tip. Left outside tank ,,1
+A057,Acerv2,Ambient,Pathogen,5,1,,2020-11-09,,,0
+A066,Elkhorn,Ambient,Pathogen,5,1,,2020-11-09,,,0
+A087,Elkhorn,Ambient,Pathogen,5,1,1,2020-11-06,TL base,,1
+A088,Elkhorn,Ambient,Pathogen,1,1,1,2020-11-08,TL base,,1
+A095,Kelsey-1,Ambient,Pathogen,5,1,1,2020-11-07,TL base,,1
+A104,U44,Ambient,Pathogen,1,1,,2020-11-09,,,0
+A110,U41,Ambient,Pathogen,1,1,,2020-11-09,,,0
+A113,U44,Ambient,Pathogen,1,1,1,2020-11-07,TL center,,1
+A115,U41,Ambient,Pathogen,5,1,1,2020-11-06,TL base,,1
+A121,U44,Ambient,Pathogen,5,1,1,2020-11-04,Almost completely gone ,,1
+A164,K2,Ambient,Pathogen,1,1,1,2020-11-06,TL base,,1
+A166,K2,Ambient,Pathogen,5,1,1,2020-11-08,"Completly dead, not sampled",,1
+A170,K2,Ambient,Pathogen,1,1,1,2020-11-05,TL base,,1
+A180,FM19,Ambient,Pathogen,5,1,,2020-11-09,,,0
+A181,FM19,Ambient,Pathogen,5,1,,2020-11-09,,,0
+A182,FM19,Ambient,Pathogen,1,1,,2020-11-09,,,0
+A200,FM9,Ambient,Pathogen,5,1,1,2020-11-06,TL everywhere - almost dead,,1
+208,FM9,Ambient,Pathogen,1,1,1,2020-11-06,TL base,,1
+228,FM9,Ambient,Pathogen,5,1,,2020-11-09,,,0
+230,FM6,Ambient,Pathogen,1,1,,2020-11-09,,,0
+243,FM6,Ambient,Pathogen,1,1,,2020-11-09,,,0
+256,FM6,Ambient,Pathogen,5,1,1,2020-11-07,TL base,,1
+264,FM14,Ambient,Pathogen,5,1,1,2020-11-08,TL base,,1
+281,FM14,Ambient,Pathogen,1,1,1,2020-11-05,TL base,,1
+283,FM14,Ambient,Pathogen,1,1,1,2020-11-06,TL base,,1
+358,FM19,Ambient,Pathogen,5,1,,2020-11-09,,,0
+A003,Kelsey-1,Ambient,Heat,6,2,10,2020-10-31,Almost dead,,1
+A023,Cooper-9,Ambient,Heat,2,2,10,2020-10-29,Dead after heat,,1
+A025,Cooper-9,Ambient,Heat,2,2,10,2020-10-29,Dead after heat,,1
+A032,Cooper-9,Ambient,Heat,6,2,10,2020-10-29,Dead after heat,,1
+A044,Acerv2,Ambient,Heat,6,2,10,2020-10-31,Almost dead,,1
+A059,Acerv2,Ambient,Heat,6,2,10,2020-10-31,Almost dead,,1
+A080,Elkhorn,Ambient,Heat,2,2,10,2020-10-31,Almost dead,,1
+A082,Elkhorn,Ambient,Heat,6,2,10,2020-10-31,Check if before ,,1
+A085,U44,Ambient,Heat,2,2,10,2020-11-09,,,0
+A093,Kelsey-1,Ambient,Heat,2,2,10,2020-10-31,Almost dead,,1
+A098,Kelsey-1,Ambient,Heat,2,2,10,2020-10-31,Almost dead,,1
+A112,U41,Ambient,Heat,2,2,10,2020-11-09,,,0
+A123,U41,Ambient,Heat,2,2,10,2020-11-09,,,0
+A124,U41,Ambient,Heat,2,2,10,2020-11-09,,,0
+A132,U44,Ambient,Heat,2,2,10,2020-11-09,,,0
+A133,U44,Ambient,Heat,2,2,10,2020-11-09,,,0
+A156,K2,Ambient,Heat,2,2,10,2020-11-09,,,0
+A168,K2,Ambient,Heat,2,2,10,2020-11-09,,,0
+A174,K2,Ambient,Heat,2,2,10,2020-11-09,,,0
+A177,FM19,Ambient,Heat,2,2,10,2020-11-09,,,0
+A187,FM19,Ambient,Heat,2,2,10,2020-11-09,,,0
+A194,FM19,Ambient,Heat,2,2,10,2020-11-09,,,0
+217,FM9,Ambient,Heat,2,2,10,2020-11-09,,,0
+224,FM9,Ambient,Heat,2,2,10,2020-11-09,,,0
+225,FM9,Ambient,Heat,2,2,10,2020-11-09,,,0
+234,FM6,Ambient,Heat,2,2,10,2020-11-09,,,0
+241,FM6,Ambient,Heat,2,2,10,2020-11-09,,,0
+242,FM6,Ambient,Heat,2,2,10,2020-11-09,,,0
+273,FM14,Ambient,Heat,2,2,10,2020-11-09,,,0
+274,FM14,Ambient,Heat,2,2,10,2020-11-09,,,0
+275,FM14,Ambient,Heat,2,2,10,2020-11-09,,,0
+469,Acerv2,Ambient,Heat,2,2,10,2020-10-29,Dead after heat,,1
+A001,Kelsey-1,NH4,Pathogen,7,3,,2020-11-01,"Gone, not sampled",,1
+A011,U44,NH4,Pathogen,3,3,,2020-11-09,,,0
+A021,Cooper-9,NH4,Pathogen,3,3,,2020-11-01,TL base,,1
+A022,Cooper-9,NH4,Pathogen,7,3,3,2020-10-31,Thin tissue,,1
+A024,Cooper-9,NH4,Pathogen,7,3,3,2020-11-08,TL center,,1
+A039,Acerv2,NH4,Pathogen,3,3,3,2020-11-03,TL base,,1
+A058,Acerv2,NH4,Pathogen,3,3,3,2020-11-05,TL base,,1
+A061,Acerv2,NH4,Pathogen,7,3,,2020-11-06,"Not sampled, no tissue left",,1
+A064,Elkhorn,NH4,Pathogen,3,3,,2020-11-09,,,0
+A067,U44,NH4,Pathogen,7,3,3,2020-11-06,TL base,,1
+A084,Elkhorn,NH4,Pathogen,7,3,,2020-11-07,TL base,,1
+A075,Elkhorn,NH4,Pathogen,7,3,,2020-11-07,TL base,,1
+A094,Kelsey-1,NH4,Pathogen,3,3,3,2020-11-06,TL base,,1
+A100,Kelsey-1,NH4,Pathogen,3,3,,2020-11-09,,,0
+A116,U41,NH4,Pathogen,7,3,3,2020-11-06,"Thin tissue, as 2020-11-08, ok",,1
+A119,U41,NH4,Pathogen,3,3,3,2020-11-06,"Thin tissue, small lesion",,1
+A125,U41,NH4,Pathogen,3,3,,2020-11-09,,,0
+A130,U44,NH4,Pathogen,3,3,,2020-11-09,,,0
+A152,K2,NH4,Pathogen,7,3,,2020-11-09,,,0
+A158,K2,NH4,Pathogen,7,3,,2020-11-09,,,0
+A167,K2,NH4,Pathogen,3,3,,2020-11-09,,,0
+A175,FM19,NH4,Pathogen,3,3,,2020-11-09,,,0
+A184,FM19,NH4,Pathogen,7,3,,2020-11-09,,,0
+A195,FM19,NH4,Pathogen,3,3,,2020-11-06,TL base,,1
+201,FM9,NH4,Pathogen,3,3,,2020-11-09,,,0
+202,FM9,NH4,Pathogen,3,3,3,2020-11-06,TL base,,1
+205,FM9,NH4,Pathogen,7,3,3,2020-11-04,TL base,,1
+232,FM6,NH4,Pathogen,3,3,3,2020-11-06,TL center,,1
+247,FM6,NH4,Pathogen,7,3,3,2020-11-05,TL base,,1
+253,FM6,NH4,Pathogen,7,3,3,2020-11-04,TL center,,1
+265,FM14,NH4,Pathogen,3,3,3,2020-11-06,TL center,,1
+289,FM14,NH4,Pathogen,7,3,,2020-11-09,,,0
+291,FM14,NH4,Pathogen,7,3,,2020-11-09,,,0
+A002,Kelsey-1,NH4,Pathogen,4,4,,2020-10-29,,,1
+A027,Cooper-9,NH4,Pathogen,4,4,4,2020-11-04,TL base,,1
+A038,Cooper-9,NH4,Pathogen,8,4,,2020-10-26,,,1
+A040,Acerv2,NH4,Pathogen,4,4,,2020-10-28,,,1
+A041,Acerv2,NH4,Pathogen,8,4,4,2020-11-03,Started TL,,1
+A046,Acerv2,NH4,Pathogen,4,4,4,2020-11-03,Very little tissue left,,1
+A076,Elkhorn,NH4,Pathogen,4,4,,2020-10-29,,,1
+A078,Elkhorn,NH4,Pathogen,8,4,,2020-11-09,,,0
+A089,Elkhorn,NH4,Pathogen,4,4,4,2020-11-06,"Thin tissue, small lesion base",,1
+A097,Kelsey-1,NH4,Pathogen,8,4,4,2020-10-31,,,1
+A102,U44,NH4,Pathogen,4,4,,2020-11-07,TL center,,1
+A107,U41,NH4,Pathogen,4,4,4,2020-11-05,TL base,,1
+A111,U44,NH4,Pathogen,8,4,4,2020-11-06,"Thin tissue, left over ok 11-08",,1
+A114,U41,NH4,Pathogen,8,4,,2020-10-21,Algae on top,,1
+A118,U41,NH4,Pathogen,4,4,4,2020-11-04,TL base,,1
+A129,U44,NH4,Pathogen,4,4,4,2020-11-06,"Thin tissue, left over ok 11-08",,1
+A153,Kelsey-1,NH4,Pathogen,4,4,,2020-10-26,,,1
+A157,K2,NH4,Pathogen,8,4,,2020-11-09,,,0
+A161,K2,NH4,Pathogen,8,4,,2020-11-06,TL base,,1
+A163,K2,NH4,Pathogen,4,4,4,2020-11-05,TL base,,1
+A176,FM19,NH4,Pathogen,4,4,4,2020-11-05,TL base,,1
+A179,FM19,NH4,Pathogen,4,4,,2020-11-07,thin tissue,,1
+A183,FM19,NH4,Pathogen,8,4,4,2020-11-05,TL base,,1
+A199,FM9,NH4,Pathogen,4,4,,2020-11-09,,,0
+216,FM9,NH4,Pathogen,4,4,,2020-11-09,,,0
+222,FM9,NH4,Pathogen,8,4,,2020-11-09,,,0
+235,FM6,NH4,Pathogen,4,4,,2020-11-09,,,0
+237,FM6,NH4,Pathogen,8,4,,2020-11-09,,,0
+238,FM6,NH4,Pathogen,8,4,,2020-11-09,,,0
+270,FM14,NH4,Pathogen,8,4,,2020-11-09,,,0
+285,FM14,NH4,Pathogen,4,4,,2020-11-09,,,0
+296,FM14,NH4,Pathogen,8,4,4,2020-11-06,Thin tissue,,1
+A012,Kelsey-1,Ambient,Placebo,1,5,5,2020-11-09,Sampled as pair 2020-11-05,,0
+A015,Kelsey-1,Ambient,Placebo,5,5,,2020-11-09,Sampled as pair 2020-11-07,,0
+A017,Cooper-9,Ambient,Placebo,5,5,,2020-10-28,,,0
+A028,Cooper-9,Ambient,Placebo,5,5,6,2020-11-09,Sampled as pair 2020-11-05,,0
+A033,Cooper-9,Ambient,Placebo,1,5,5,2020-11-09,Sampled as pair 2020-11-06,,0
+A047,Acerv2,Ambient,Placebo,1,5,5,2020-11-09,Sampled as pair 2020-11-06,,0
+A055,Acerv2,Ambient,Placebo,1,5,5,2020-11-09,Sampled as pair 2020-11-03,,0
+A062,Acerv2,Ambient,Placebo,5,5,,2020-11-09,,,0
+A069,Elkhorn,Ambient,Placebo,5,5,,2020-11-09,Sampled as pair 2020-11-08,,0
+A086,Elkhorn,Ambient,Placebo,1,5,6,2020-11-09,Sampled as pair 2020-11-06,,0
+A091,U44,Ambient,Placebo,5,5,5,2020-11-09,Sampled as pair 2020-11-04,,0
+A103,Kelsey-1,Ambient,Placebo,1,5,6,2020-11-09,Sampled as pair 2020-11-06,,0
+A109,U44,Ambient,Placebo,5,5,5,2020-11-09,Accidental Pair_Needed NH4 sample,,0
+A120,U44,Ambient,Placebo,1,5,,2020-11-09,Sampled as pair 2020-11-07,,0
+A154,K2,Ambient,Placebo,5,5,5,2020-11-09,Sampled as pair 2020-11-06,,0
+A160,K2,Ambient,Placebo,5,5,,2020-11-09,Sampled as pair 2020-11-05,,0
+A186,FM19,Ambient,Placebo,1,5,,2020-11-09,,,0
+A189,FM19,Ambient,Placebo,5,5,,2020-11-09,,,0
+A191,FM19,Ambient,Placebo,1,5,,2020-11-09,,,0
+218,FM9,Ambient,Placebo,1,5,6,2020-11-09,Sampled as pair 2020-11-06,,0
+227,FM9,Ambient,Placebo,5,5,5,2020-11-09,Sampled as pair 2020-11-06,,0
+245,FM6,Ambient,Placebo,1,5,,2020-11-09,Sampled as pair 2020-11-07,,0
+250,FM6,Ambient,Placebo,5,5,,2020-11-09,,,0
+252,FM6,Ambient,Placebo,5,5,,2020-11-09,,,0
+268,FM14,Ambient,Placebo,5,5,5,2020-11-09,Sampled as pair 2020-11-06,,0
+276,FM14,Ambient,Placebo,5,5,6,2020-11-09,Sampled as pair 2020-11-05/11-08,,0
+279,FM14,Ambient,Placebo,1,5,5,2020-11-09,Accidental Pair_Needed NH4 sample,,0
+334,FM9,Ambient,Placebo,1,5,,2020-11-09,,,0
+471,Elkhorn,Ambient,Placebo,1,5,,2020-11-09,,,0
+A006,U44,Ambient,Placebo,2,6,2,2020-11-09,,,0
+A013,Kelsey-1,Ambient,Placebo,2,6,2,2020-11-09,,,0
+A020,Cooper-9,Ambient,Placebo,6,6,2,2020-11-09,,,0
+A035,Cooper-9,Ambient,Placebo,2,6,2,2020-11-09,,,0
+A042,Acerv2,Ambient,Placebo,2,6,2,2020-11-09,,,0
+A043,Acerv2,Ambient,Placebo,2,6,2,2020-11-09,,,0
+A050,Acerv2,Ambient,Placebo,6,6,2,2020-11-09,,,0
+A065,Elkhorn,Ambient,Placebo,2,6,2,2020-11-09,,,0
+A079,Elkhorn,Ambient,Placebo,2,6,2,2020-11-09,,,0
+A090,Elkhorn,Ambient,Placebo,6,6,2,2020-11-09,,,0
+A096,Kelsey-1,Ambient,Placebo,6,6,2,2020-11-09,,,0
+A099,Kelsey-1,Ambient,Placebo,2,6,2,2020-11-09,,,0
+A122,U44,Ambient,Placebo,6,6,2,2020-11-09,,,0
+A128,U44,Ambient,Placebo,6,6,2,2020-11-09,,,0
+A171,K2,Ambient,Placebo,2,6,2,2020-11-09,,,0
+A173,K2,Ambient,Placebo,6,6,2,2020-11-09,,,0
+A178,FM19,Ambient,Placebo,6,6,2,2020-11-09,,,0
+A193,FM19,Ambient,Placebo,2,6,2,2020-11-09,,,0
+A197,FM19,Ambient,Placebo,2,6,2,2020-11-09,,,0
+207,FM9,Ambient,Placebo,2,6,2,2020-11-09,,,0
+209,FM9,Ambient,Placebo,2,6,2,2020-11-09,,,0
+221,FM9,Ambient,Placebo,6,6,2,2020-11-09,,,0
+244,FM6,Ambient,Placebo,6,6,2,2020-11-09,,,0
+251,FM6,Ambient,Placebo,6,6,2,2020-11-09,,,0
+260,FM6,Ambient,Placebo,2,6,2,2020-11-09,,,0
+263,FM14,Ambient,Placebo,2,6,2,2020-11-09,,,0
+277,FM14,Ambient,Placebo,6,6,2,2020-11-09,,,0
+288,FM14,Ambient,Placebo,6,6,2,2020-11-09,,,0
+410,K2,Ambient,Placebo,6,6,2,2020-11-09,,,0
+A007,Kelsey-1,NH4,Placebo,7,7,7,2020-11-04,"Started TL AM, gone PM",,1
+A009,Kelsey-1,NH4,Placebo,7,7,,2020-11-01,,"Started TL 10-30, some tissue left ",1
+A014,Kelsey-1,NH4,Placebo,3,7,,2020-11-09,Sampled as pair 2020-11-06,,0
+A018,Cooper-9,NH4,Placebo,3,7,,2020-11-04,No sample collected-completely gone,,1
+A019,Cooper-9,NH4,Placebo,7,7,,2020-10-25,,,1
+A036,Cooper-9,NH4,Placebo,3,7,7,2020-11-08,Sampled as pair 2020-11-04,,0
+A048,Acerv2,NH4,Placebo,7,7,,2020-10-25,,,1
+A051,Acerv2,NH4,Placebo,7,7,7,2020-11-08,Sampled as pair 2020-11-05,,1
+A056,Acerv2,NH4,Placebo,3,7,,2020-11-02,TL base,40% TL,1
+A077,Elkhorn,NH4,Placebo,7,7,,2020-11-09,Sampled as pair 2020-11-07,,0
+A092,Elkhorn,NH4,Placebo,3,7,,2020-11-09,,,0
+A105,U44,NH4,Placebo,7,7,7,2020-11-09,Sampled as pair 2020-11-06,,0
+A106,U44,NH4,Placebo,3,7,,2020-11-09,Sampled as pair 2020-11-06,,0
+A127,U44,NH4,Placebo,7,7,,2020-11-09,,,0
+A159,K2,NH4,Placebo,7,7,,2020-11-07,TL base,,1
+A162,K2,NH4,Placebo,3,7,7,2020-11-09,Sampled as pair 2020-11-05,,0
+A190,FM19,NH4,Placebo,3,7,7,2020-11-09,Sampled as pair 2020-11-06,,0
+A192,FM19,NH4,Placebo,7,7,,2020-11-09,,,0
+A196,FM19,NH4,Placebo,7,7,,2020-11-09,,,0
+215,FM9,NH4,Placebo,3,7,7,2020-11-09,Sampled as pair 2020-11-04,,0
+220,FM9,NH4,Placebo,7,7,,2020-11-09,,,0
+226,FM9,NH4,Placebo,7,7,,2020-11-09,,,0
+231,FM6,NH4,Placebo,7,7,7,2020-11-09,Sampled as pair 2020-11-04,,0
+254,FM6,NH4,Placebo,3,7,,2020-11-09,,,0
+258,FM6,NH4,Placebo,3,7,7,2020-11-09,Sampled as pair 2020-11-04,,0
+262,FM14,NH4,Placebo,7,7,7,2020-11-09,Sampled as pair 2020-11-06,,0
+269,FM14,NH4,Placebo,3,7,7,2020-11-09,Sampled as pair 2020-11-06,,0
+293,FM14,NH4,Placebo,3,7,,2020-11-09,,,0
+A008,Kelsey-1,NH4,Placebo,4,8,,2020-10-26,Broke from tag and tip yesterday,,1
+A010,Kelsey-1,NH4,Placebo,8,8,8,2020-11-05,TL/thinning tissue,,1
+A034,Cooper-9,NH4,Placebo,4,8,,2020-11-01,No sample collected-completely gone,,1
+A037,Cooper-9,NH4,Placebo,4,8,,2020-10-21,,,1
+A045,Acerv2,NH4,Placebo,4,8,8,2020-11-05,TL base,,1
+A052,Acerv2,NH4,Placebo,8,8,8,2020-11-09,Sampled as pair 2020-11-03/and 2020-11-06,,0
+A060,Acerv2,NH4,Placebo,8,8,,2020-10-24,,,1
+A068,Elkhorn,NH4,Placebo,4,8,,2020-11-09,,,0
+A071,U44,NH4,Placebo,4,8,,2020-11-09,,,0
+A072,Elkhorn,NH4,Placebo,8,8,,2020-11-09,Sampled as pair 2020-11-06,,0
+A083,Elkhorn,NH4,Placebo,8,8,,2020-11-09,Sampled as pair 2020-11-07,,0
+A101,Kelsey-1,NH4,Placebo,8,8,8,2020-11-05,TL/thinning tissue,,1
+A131,U44,NH4,Placebo,8,8,,2020-11-09,Sampled as pair 2020-11-06,,0
+A134,U44,NH4,Placebo,8,8,,2020-11-09,Sampled as pair 2020-11-07,,0
+A155,K2,NH4,Placebo,4,8,,2020-11-09,,,0
+A165,K2,NH4,Placebo,8,8,8,2020-11-09,Sampled as pair 2020-11-06,,0
+A172,K2,NH4,Placebo,4,8,,2020-11-09,,,0
+A185,FM19,NH4,Placebo,8,8,,2020-11-09,,,0
+A188,FM19,NH4,Placebo,8,8,8,2020-11-09,Sampled as pair 2020-11-05,,0
+A198,FM19,NH4,Placebo,4,8,,2020-11-09,,,0
+204,FM9,NH4,Placebo,4,8,8,2020-11-09,Sampled as pair 2020-11-06,,0
+211,FM9,NH4,Placebo,8,8,,2020-11-09,,,0
+214,FM9,NH4,Placebo,8,8,,2020-11-09,,,0
+239,FM6,NH4,Placebo,8,8,8,2020-11-09,Sampled as pair 2020-11-06,,0
+261,FM6,NH4,Placebo,4,8,,2020-11-09,,,0
+266,FM6,NH4,Placebo,4,8,,2020-11-09,,,0
+272,FM14,NH4,Placebo,4,8,,2020-11-09,,,0
+282,FM14,NH4,Placebo,8,8,,2020-11-09,,,0
+284,FM14,NH4,Placebo,4,8,,2020-11-09,,,0
