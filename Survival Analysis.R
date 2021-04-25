@@ -168,6 +168,12 @@ summary(proMod)
 
 ggsurvplot(fit = survfit(Surv(survivalTime, category)~Disease+Treatment, data=datPro))
 
+
+#******* If I have time, maybe make some nutrients, disease survival plots using Ana's data****
+# lots of mortality during Nutrients only phase. Including that might make this make more sense
+
+
+
 ############################################################################################
 
 # make a plot with seperate survivorship curves for each genotype
