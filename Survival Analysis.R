@@ -67,7 +67,8 @@ levels(NDSH$Diseased)
 ?factor
 NDSH$Diseased <- factor(NDSH$Diseased, levels=c('Placebo', 'Pathogen'))
 levels(NDSH$Diseased)
-# do stats for each variable separately 
+
+# do stats for each variable separately - Ana suggestion
 
 # Coxph #1: disease+SH
 # Disease matters for survival, SH doesn't 
@@ -111,6 +112,12 @@ ggplot(fitSH, aes(SH, fit)) +
 # This has more data than NDSH. 
 # Use this for everything except SH (for obvious reasons)
 
+# order ND_all$Disease
+levels(ND_all$Disease)
+?factor
+ND_all$Disease <- factor(ND_all$Disease, levels=c('Placebo', 'Pathogen'))
+levels(NDSH$Diseased)
+
 # Coxph #4: don't use this because tank 2 was not removed yet. Redo with tank 2 removed
 survMod <- coxph(Surv(survivalTime, category)~Disease*Nutrients, data=ND_all)
 summary(survMod)
@@ -128,12 +135,26 @@ dat <- ND_all %>%
 
 #mutate(Treatment=ifelse(Tank==2, "Probiotic", "Nothing"))
 
+#tell R treatment order. order data frame 
+levels(dat$Disease)
+dat$Disease <- factor(dat$Disease, levels=c('Placebo', 'Pathogen'))
+levels(NDSH$Diseased)
+
 # Coxph #5: of Nutrients Disease interaction ******** use this
 survMod <- coxph(Surv(survivalTime, category)~Disease*Nutrients, data=dat)
-SurvMod
+survMod
 summary(survMod)
 
-# Kaplan-Meier plot #2: Nutrients and disease treatment w. tank 2 removed
+# Coxph #6: Just disease vs placebo ***** use this
+survMod2 <- coxph(Surv(survivalTime, category)~Disease, data=dat)
+survMod2
+summary(survMod2)
+
+# Kaplan-Meier Plot #2: survival probability curve of pathogen vs. placebo over time
+ggsurvplot(fit = survfit(Surv(survivalTime, category)~Disease, data=dat))+
+  labs(title="A. cervicornis Survivorship by Disease Treatment")
+
+# Kaplan-Meier plot #3: Nutrients and disease treatment w. tank 2 removed
 # ********** use this
 ggsurvplot(fit = survfit(Surv(survivalTime, category)~Disease+Nutrients, data=dat))+
   labs(title = "A. cervicornis Survivorship by Nutrients-Disease Combination")
