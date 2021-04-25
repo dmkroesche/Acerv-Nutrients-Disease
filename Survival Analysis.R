@@ -62,13 +62,22 @@ ND_all$Nutrients <- as.factor(ND_all$Nutrients)
 # NOTE: Tank 2 already removed
 ?coxph
 
+#tell R treatment order. order data frame 
+levels(NDSH$Diseased)
+?factor
+NDSH$Diseased <- factor(NDSH$Diseased, levels=c('Placebo', 'Pathogen'))
+levels(NDSH$Diseased)
+# do stats for each variable separately 
+
 # Coxph #1: disease+SH
 # Disease matters for survival, SH doesn't 
 survMod_dis_SH <- coxph(Surv(survivalTime, category)~Diseased+SH, data=NDSH)
+survMod_dis_SH
 summary(survMod_dis_SH)
 
 # Coxph #2: diseased*SH
 survMod_dis_SH2 <- coxph(Surv(survivalTime, category)~Diseased*SH, data=NDSH)
+survMod_dis_SH2
 summary(survMod_dis_SH2)
 
 # Kaplan-Meier Plot #1: survival probability curve of pathogen vs. placebo over time
@@ -121,6 +130,7 @@ dat <- ND_all %>%
 
 # Coxph #5: of Nutrients Disease interaction ******** use this
 survMod <- coxph(Surv(survivalTime, category)~Disease*Nutrients, data=dat)
+SurvMod
 summary(survMod)
 
 # Kaplan-Meier plot #2: Nutrients and disease treatment w. tank 2 removed
@@ -173,10 +183,12 @@ ggsurvplot_facet(fit2, data = dat,
 
 # Cox PH #6: Genotype*Treatment ********** genuinely confused about what I did here. 
 survMod_geno <- coxph(Surv(survivalTime, category)~Genotype*Treatment, data=dat)
+survMod_geno
 summary(survMod_geno)
 
 # Cox PH #7:
 survMod_geno2 <- coxph(Surv(survivalTime, category)~Genotype+Treatment, data=dat)
+survMod_geno2
 summary(survMod_geno2)
 
 #######################################################################################
