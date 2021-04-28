@@ -172,15 +172,13 @@ ggsurvplot(fit = survfit(Surv(survivalTime, category)~Disease+Treatment, data=da
 #******* If I have time, maybe make some nutrients, disease survival plots using Ana's data****
 # lots of mortality during Nutrients only phase. Including that might make this make more sense
 
-
-
-############################################################################################
+######################################################################################################
 
 # make a plot with seperate survivorship curves for each genotype
 
 #below copied and edited from Ana's github
 
-# Genotype-Treatemnt model
+# Genotype-Treatment model
 
 dat$Treatment<-paste(dat$Nutrients, dat$Disease, sep = "-" )
 dat <- dat %>%
@@ -217,6 +215,12 @@ summary(survMod_geno)
 survMod_geno2 <- coxph(Surv(survivalTime, category)~Genotype+Treatment, data=dat)
 survMod_geno2
 summary(survMod_geno2)
+
+# Cox PH #7:
+survMod_geno3 <- coxph(Surv(survivalTime, category)~Genotype, data=dat)
+survMod_geno3
+summary(survMod_geno3)
+
 
 #######################################################################################
 
@@ -294,5 +298,37 @@ TreatmentP<-ggsurvplot_facet(fit2, data = Survival.data_1,
   labs(title="Survivorship by Genotype: Nutrients and Disease Phases")
 TreatmentP
 
+# Kaplan-Meier plot using Ana's data
+ggsurvplot(fit = survfit(Surv(Day, Fu.stat_exp)~Treatment, data=Survival.data_1))+
+  scale_color_manual(values = c("light blue", "red","dark blue","dark red"))+
+  labs(title = "A. cervicornis Survivorship by Nutrients-Disease Combination")
 
+# Coxph: of Nutrients Disease interaction
+survMod_ana <- coxph(Surv(Day, Fu.stat_exp)~Disease+Nutrients, data=Survival.data_1)
+survMod_ana
+summary(survMod_ana)
+
+
+#########################################################################################
+#Trying to change colors and add lines
+#copying it here and leaving originals alone in case I fuck up
+
+# Treatment model
+
+dat$Treatment<-paste(dat$Nutrients, dat$Disease, sep = "-" )
+
+# Kaplan-Meier plot by treatment using Ana's data
+ggsurvplot(fit = survfit(Surv(Day, Fu.stat_exp)~Treatment, data=Survival.data_1))+
+  scale_color_manual(values = c("light blue", "red","dark blue","dark red"))+
+  geom_vline(xintercept = 46, linetype="dashed", 
+             color = "gray")+
+  labs(title = "A. cervicornis Survivorship by Nutrients-Disease Combination")
+
+## It won't let me change the color or add lines.
+## Error message: Error in ggsurvplot(fit = survfit(Surv(Day, Fu.stat_exp) ~ Treatment,  : 
+## non-numeric argument to binary operator
+## In addition: Warning message:
+## Incompatible methods ("+.ggsurv", "+.gg") for "+" 
+
+############################################################################################
 

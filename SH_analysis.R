@@ -175,6 +175,11 @@ summary(genoANOVA2)
 TukeyHSD(genoANOVA, conf.level = 0.95)
 TukeyHSD(genoANOVA2, conf.level = 0.95)
 
+#do a genral mixed model
+?glmm
+#fuck that, I googled it and cannot figure it out
+
+
 #grouped bar by genotype and tank (not enough replication per tank for error bars)
 summarygenotank=summarySE(b4disease,measurevar = 'A.Acerv',groupvars = c('Genotype','Tank_D1'))
 summarygenotank

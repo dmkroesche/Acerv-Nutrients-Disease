@@ -59,3 +59,4 @@ tapply(NH4only$NH4,NH4only$Nutrients,mean)
 #(3)
 diseasephase = subset(NH4data, Timepoint>'50')
 tapply(diseasephase$NH4,diseasephase$Nutrients,mean)
+
