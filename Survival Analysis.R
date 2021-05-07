@@ -156,8 +156,12 @@ ggsurvplot(fit = survfit(Surv(survivalTime, category)~Disease, data=dat))+
 
 # Kaplan-Meier plot #3: Nutrients and disease treatment w. tank 2 removed
 # ********** use this
-ggsurvplot(fit = survfit(Surv(survivalTime, category)~Disease+Nutrients, data=dat))+
+Fill.colour<-c ("light blue", "red","dark blue","dark red")
+
+All<-ggsurvplot((fit = survfit(Surv(survivalTime, category)~Disease+Nutrients, data=dat)), 
+                palette=Fill.colour)+
   labs(title = "A. cervicornis Survivorship by Nutrients-Disease Combination")
+All  
 
 # Kaplan-Meier plot #3: "Probiotic" plot ******* put this on hold for now
 datPro <- ND_all %>%
@@ -198,6 +202,7 @@ ggsurvplot_facet(fit2, data = dat, facet.by="Treatment",
                  nrow = 6, alpha=1,
                  linetype=1) +
   geom_vline(xintercept = 46, linetype="dashed", color = "gray")
+
 ggsurvplot_facet(fit2, data = dat, 
                  facet.by="Genotype", 
                  # risk.table=T, tables.height=0.5, 
@@ -266,9 +271,13 @@ surv_object_1
 
 # Kaplan-Meier estimator. The "log-log" confidence interval is- preferred.
 
+fit1 <- survfit(surv_object_1 ~ Treatment, data = Survival.data_1)
+summary(fit1)
+
 fit2 <- survfit(surv_object_1 ~ Genotype + Treatment, data = Survival.data_1)
 summary(fit2)
-# Plot the survival model
+
+# Plot the survival modelper genotye and treatment 
 GenTre_1<-ggsurvplot(fit2, data = Survival.data_1, pval = TRUE,
                      risk.table=F,  tables.height=0.5)
 GenTre_1
@@ -279,29 +288,27 @@ GenotypeP<-ggsurvplot_facet(fit2, data = Survival.data_1, facet.by="Treatment",
   geom_vline(xintercept = 46, linetype="dashed", 
              color = "gray")
 GenotypeP
+
 TreatmentP<-ggsurvplot_facet(fit2, data = Survival.data_1, 
                              facet.by="Genotype", 
                              # risk.table=T, tables.height=0.5, 
                              nrow = 3, alpha=1,
                              linetype=1) +
-  geom_vline(xintercept = 48, linetype="dashed", 
-             color = "gray") +
-  annotate("segment", x = 36, xend = 51, y = 0, yend = 0,
-           colour = "black", linetype=3)+
-  annotate("point",x=c(47), y=c(0), 
-           shape=4, size=2)+
-  annotate("segment", x = 52, xend = 57, y = 0, yend = 0,
-           colour = "black", linetype=1)+
-  annotate("point",x=c(58), y=c(0), 
-           shape=4, size=2)+
+  geom_vline(xintercept = 48, linetype="dashed", color = "gray") +
   scale_color_manual(values = c("light blue", "red","dark blue","dark red"))+
   labs(title="Survivorship by Genotype: Nutrients and Disease Phases")
 TreatmentP
 
 # Kaplan-Meier plot using Ana's data
-ggsurvplot(fit = survfit(Surv(Day, Fu.stat_exp)~Treatment, data=Survival.data_1))+
-  scale_color_manual(values = c("light blue", "red","dark blue","dark red"))+
-  labs(title = "A. cervicornis Survivorship by Nutrients-Disease Combination")
+
+Fill.colour<-c ("light blue", "red","dark blue","dark red")
+
+All_genotypes<-ggsurvplot(fit1, data=Survival.data_1,
+                          pval = TRUE, conf.int = F, risk.table=F,
+                          palette=Fill.colour,
+                          break.time.by=7, xlim=c(0,60)) +
+  ggtitle("A. cervicornis Survivorship by Nutrients-Disease Combination")
+All_genotypes
 
 # Coxph: of Nutrients Disease interaction
 survMod_ana <- coxph(Surv(Day, Fu.stat_exp)~Disease+Nutrients, data=Survival.data_1)
